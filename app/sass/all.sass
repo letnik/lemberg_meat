@@ -1,7 +1,7 @@
 // __TMP___
 section
   height: 100vh
-section
+section, header
   &:nth-child(odd)
     background: red
   &:nth-child(even)
@@ -9,26 +9,19 @@ section
 
 
 /* --- variables --- */
-@import "variables"
+@import "parts/variables"
 
 /* --- grid --- */
-@import "grid"
-
-/* --- specification --- */
-@import "specification"
-
-/* --- header --- */
-@import "header"
-
-/* --- mousescroll --- */
-@import "mousescroll"
+@import "parts/grid"
 
 /* --- hamburger --- */
 @import "humburger/hamburger"
 
+/* --- specification --- */
+@import "parts/specification"
+
 /* --- media --- */
-@import "media"
+@import "parts/media"
 
 /* --- popup --- */
 @import "popup/popup-fadeIn-top"
-
