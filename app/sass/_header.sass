@@ -1,0 +1,25 @@
+#header
+  position: fixed
+  width: 100%
+  top: 0
+  left: 0
+  right: 0
+  -webkit-transition: $transition
+  -moz-transition: $transition
+  -o-transition: $transition
+  transition: $transition
+  z-index: 10000
+  &.active
+    background: #ccc
+
+  nav.nav
+    li
+      a
+        &.active
+          color: yellow
+
+
+.nav-list
+  li
+    margin: 0 15px
+    &.active
