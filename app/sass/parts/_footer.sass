@@ -1,24 +1,13 @@
 
-.nav-bar
-  .nav
-    &-list
-    &-item
-      padding: 15px
-      a
-        color: $text-black
-        text-transform: uppercase
-        font-family: $font-family-regolar
-        font-size: 15px
-        line-height: 20px
-
-
 .footer
   background: #252B41
   .logo
-    img
-      width: 100%
-      max-width: 112px
-      height: auto
+    a 
+      display: block
+      img
+        width: 100%
+        max-width: 112px
+        height: auto
   .nav-bar
     .nav
       &-list
@@ -36,24 +25,34 @@
           font-family: $font-family-regolar
           font-size: 15px
           line-height: 20px
+      i 
+        font-size: 25px
+        color: $text-gray
+        margin-right: 10px
+
 
 .footer
+  padding: 0
+  .footer-top
+    padding: 16px
+  .footer-bottom
+    border-top: 0.3px solid $text-gray
+    padding: 27px
   .copyright
     padding-right: 15px
-    margin-top: 30px
     a
       display: block
       color: $text-gray
       font-family: $font-family-regolar
       font-size: 15px
       line-height: 20px
-  .soc-list 
+  .soc
+    &-list 
     &-item
       a
-        i
-          font-family: "fontello"
-          font-size: 15px
-          color: $text-gray
+        color: $text-gray
+        padding-left: 15px
+        font-size: 25px
 
 
 
