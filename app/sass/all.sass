@@ -49,10 +49,94 @@
     font-weight: bold
     font-size: 40px
     line-height: 55px
+    color: $text-black
+
+  h2
+    font-family: $font-family-regolar
+    font-style: normal
+    font-weight: bold
+    font-size: 25px
+    line-height: 34px
+    color: $text-black
+
 
 
 .title-bg
   background: url("../img/Ellipse 47.png") no-repeat center center / contain
   background-size: 100%
   width: 100%
-  height: auto
+  height: 100vh
+
+.coment
+  -webkit-transform: rotate(-90deg) //Chrome, Safari
+  -moz-transform: rotate(-90deg) //Firefox
+  -o-transform: rotate(-90deg) //Opera
+  -ms-transform: rotate(-90deg) //IE
+  transform: rotate(-90deg) //браузеры без префексов
+  p 
+    font-family: $font-family-regolar
+    font-style: normal
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+    color: $text-black
+    span 
+      font-size: 18px
+      line-height: 25px
+      color: $accent 
+
+.location-text-holder
+  background: #F4F5F9
+  box-shadow: 0px 0px 15px rgba(132, 130, 155, 0.25)
+  padding: 90px
+  .location-title
+
+.location
+  &:nth-child(2n)
+    .location-item
+      .row
+        flex-direction:   row-reverse
+
+.map-tmp
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  width: 585px
+  height: 100%
+  
+  
+.location-text
+  &-item
+    font-family: $font-family-regolar
+    color: $text-black
+    font-style: normal
+    font-weight: normal
+    font-size: 15px
+    line-height: 40px
+    &:nth-child(1)
+      &::before
+        font-size: 20px
+        content: '\2190'
+        margin-right: 14px
+        color: $accent
+    &:nth-child(2)
+      &::before
+        font-size: 20px
+        content: '\2190'
+        margin-right: 14px
+        color: $accent
+    &:nth-child(3)
+      &::before
+        font-size: 20px
+        content: '\2190'
+        margin-right: 14px
+        color: $accent
+    &:nth-child(4)
+      &::before
+        font-size: 20px
+        content: '\2190'
+        margin-right: 14px
+        color: $accent
+
+      
