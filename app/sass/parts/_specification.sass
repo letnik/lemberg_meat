@@ -46,20 +46,31 @@ section, footer
   height: 100%
 
 .btn
+  font-family: Nunito
   display: inline-block
-  background: Olive
-  border: none
-  padding: 8px 15px
-  margin: 0
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  background: $accent-opacity
+  border: 1px solid $accent
+  padding: 18px 25px
+  text-transform: uppercase
+  margin: 0 
   cursor: pointer
   line-height: 18px
   font-size: 15px
   -webkit-transition: $transition
   transition: $transition
   &:hover
-    background: #222
+    background: lighten($accent, 5%)
     color: #fff
-    
+    box-shadow:  0 0 20px 0 rgba($text-dark, .35)
+  &-solid
+     background: $accent
+     color: #fff
+
+
+
 @-moz-document url-prefix()
   button.btn
 
@@ -69,3 +80,20 @@ section, footer
 .abs
   position: absolute
 
+.grayer
+  background:  $bg-all
+  // box-shadow: $box-shadow
+
+
+.vertical-title
+  // width: 400px
+  -webkit-transform: rotate(-90deg) translateY(-50%); //Chrome, Safari
+  -moz-transform: rotate(-90deg) translateY(-50%);//Firefox
+  -o-transform: rotate(-90deg) translateY(-50%); //Opera
+  -ms-transform: rotate(-90deg) translateY(-50%); //IE
+  transform: rotate(-90deg) translateY(-50%); //браузеры без префексов
+  width: 400px;
+  position: absolute;
+  right: -100%;
+  text-align: center;
+  top: 0;
