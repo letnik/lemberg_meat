@@ -20,6 +20,10 @@ $border: $text-gray
   color: $text-white
   cursor: pointer
   margin: 35px auto
+  transition: .3s cubic-bezier(.38,-1.13,.63,2.06) transform, .3s background, .3s color
+  transform: scale(1)
+  &:hover
+    transform: scale(1.1)
   span
     display: block;
     position: absolute;
