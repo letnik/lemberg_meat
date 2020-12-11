@@ -60,11 +60,14 @@ section, footer
   line-height: 18px
   font-size: 15px
   -webkit-transition: $transition
-  transition: $transition
+  // transition: $transition
+  transition: .3s cubic-bezier(.38,-1.13,.63,2.06) transform, .3s background, .3s color
+  transform: scale(1)
   &:hover
     background: lighten($accent, 5%)
     color: #fff
     box-shadow:  0 0 20px 0 rgba($text-dark, .35)
+    transform: scale(1.05)
   &-solid
      background: $accent
      color: #fff
