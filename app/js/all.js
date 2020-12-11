@@ -1,8 +1,1 @@
-jQuery(document).ready(function( $ ) {
-
-    $('.hamburger').on('click', function() {
-        $(this).toggleClass('opened');
-        $('.nav-humburger').fadeToggle();
-    });
-
-});
+jQuery(document).ready((function(e){e(".hamburger").on("click",(function(){e(this).toggleClass("opened"),e(".nav-humburger").fadeToggle()}))}));
