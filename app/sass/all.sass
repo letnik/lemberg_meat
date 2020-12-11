@@ -31,10 +31,76 @@
 /* --- popup --- */
 @import "popup/popup-fadeIn-top"
 
-.button-wrap
-  .btn
-    background: $accent
-    padding: 20px 35px
+.rel
+  position: relative
+
+.abs
+  position: absolute
+
+
+.nav-humburger
+  top: 50px
+  left: 0
+  bottom: 0
+  right: 0
+  .nav 
+    width: 100vw
+    height: 100vh
+    background:  #ccc
+    .nav-list
+      .nav-item
+        padding: 10px
+        a
+          margin: 0 5px
+
+
+.icon-item
+  .icon
+    &-box
+      width: 55px
+      min-width: 55px
+      height: 55px
+      border-radius: 55px
+      margin-right: 15px
+      overflow: hidden
+      position: relative
+      &::before
+        content: ''
+        width: 100%
+        height: 100%
+        position: absolute
+        left: 0
+        right: 0
+        display: block
+    &-head
+      &::before
+        background: url("../img/Group 98.png") no-repeat center center / cover
+    &-ones
+      &::before
+        background: url("../img/Group 98.png") no-repeat center center / cover
+    &-area
+      &::before
+        background: url("../img/Group 98.png") no-repeat center center / cover
+    &-no_cons
+      &::before
+        background: url("../img/Group 98.png") no-repeat center center / cover
+
+
+.icon-content
+  .icon-title
+    font-family: $font-family-regolar
+    color: #fff
+    font-style: normal
+    font-weight: 600
+    font-size: 24px
+    line-height: 33px
+  .icon-desc
+    font-family: $font-family-regolar
+    color: #fff
+    font-style: normal
+    font-weight: 300
+    font-size: 15px
+    color: #DCDFE6
 
 
 
@@ -178,3 +244,6 @@
         color: $text-dark
       .button-wrap
         margin-top: 75px
+
+.header-benefits
+  padding: 5px 15px
