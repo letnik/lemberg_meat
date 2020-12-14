@@ -7,6 +7,9 @@
 /* --- grid --- */
 @import "parts/grid"
 
+/* --- top_panel --- */
+@import "parts/top_panel"
+
 /* --- left_panel --- */
 @import "parts/left_panel"
 
@@ -38,21 +41,6 @@
   position: absolute
 
 
-.nav-humburger
-  top: 50px
-  left: 0
-  bottom: 0
-  right: 0
-  .nav 
-    width: 100vw
-    height: 100vh
-    background:  #ccc
-    .nav-list
-      .nav-item
-        padding: 10px
-        a
-          margin: 0 5px
-
 
 .icon-item
   .icon
@@ -74,9 +62,9 @@
         left: 0
         right: 0
         display: block
-    &-head
+    &-pic
       &::before
-        background: url("../img/Group 98.png") no-repeat center center / cover
+        background: url("../img/icon/pic-color.svg") no-repeat center center / cover
     &-ones
       &::before
         background: url("../img/Group 98.png") no-repeat center center / cover
@@ -159,8 +147,8 @@
 
 .icon-item
   padding: 7px
-  .icon-telegram
-    font-size: 49px
+  .icon-box i
+    font-size: 25px
   .icon-content
     margin-left: 34px
     .icon-title         
@@ -178,6 +166,10 @@
       font-size: 15px
       line-height: 20px
       color: $text-black
+  &.icon-defoult
+    .icon-box i
+      font-size: 50px
+
 
 
 

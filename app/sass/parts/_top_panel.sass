@@ -1,0 +1,39 @@
+.panel-top
+    z-index: 90
+    position: absolute
+    left: 100px
+    top: 0
+    right: 0
+    width: calc(100% - 100px)
+    .btn-wrap
+        margin: 15px 0
+    .icon
+        &-list
+        &-item
+            padding: 15px
+            [class^="icon-"]
+                margin-right: 15px
+.address, .phone, .logo
+    padding: 15px
+    margin: 0
+    font-family: Nunito;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    i
+        margin-right: 10px
+    a
+        transition: $transition
+        &:hover
+            color: $accent
+    > *
+        padding: 0
+        margin: 0
+
+.logo
+    height: 86px
+    display: flex
+    img
+        height: 100%
+        width: auto
