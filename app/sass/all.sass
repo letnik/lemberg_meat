@@ -40,8 +40,6 @@
 .abs
   position: absolute
 
-
-
 .icon-item
   .icon
     &-box
@@ -67,30 +65,30 @@
         background: url("../img/icon/pic-color.svg") no-repeat center center / cover
     &-ones
       &::before
-        background: url("../img/Group 98.png") no-repeat center center / cover
+        background: url("../img/icon/pic-color.svg") no-repeat center center / cover
     &-area
       &::before
-        background: url("../img/Group 98.png") no-repeat center center / cover
+        background: url("../img/icon/pic-color.svg") no-repeat center center / cover
     &-no_cons
       &::before
-        background: url("../img/Group 98.png") no-repeat center center / cover
+        background: url("../img/icon/pic-color.svg") no-repeat center center / cover
 
-
-.icon-content
-  .icon-title
-    font-family: $font-family-regolar
-    color: #fff
-    font-style: normal
-    font-weight: 600
-    font-size: 24px
-    line-height: 33px
-  .icon-desc
-    font-family: $font-family-regolar
-    color: #fff
-    font-style: normal
-    font-weight: 300
-    font-size: 15px
-    color: #DCDFE6
+.darker
+  .icon-item .icon-content
+    .icon-title
+      font-family: $font-family-regolar
+      color: #fff
+      font-style: normal
+      font-weight: 600
+      font-size: 24px
+      line-height: 33px
+    .icon-desc
+      font-family: $font-family-regolar
+      color: #fff
+      font-style: normal
+      font-weight: 300
+      font-size: 15px
+      color: #DCDFE6
 
 
 
@@ -167,8 +165,9 @@
       line-height: 20px
       color: $text-black
   &.icon-defoult
-    .icon-box i
-      font-size: 50px
+    .icon-box 
+      i
+        font-size: 50px
 
 
 
@@ -275,7 +274,7 @@
         margin-top: 75px
 
 .header-benefits
-  padding: 5px 15px
+  padding: 0 15px
 
 .tac
   text-align: center
