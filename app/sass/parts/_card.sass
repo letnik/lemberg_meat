@@ -6,16 +6,34 @@
     &-item
         width: 34%
         margin: 30px 8%
-        padding: 15px
-        border-bottom: 1px solid #ccc
-        border-left: 1px solid #ccc
+        padding: 18px
+        border-bottom: 1px solid #F1404B
+        border-left: 1px solid #F1404B
+        position: relative
         // border-right: 1px solid #ccc
         &:nth-child(4n)
             margin-right: 0
+        &::after, &::before
+            display: block
+            content: ""
+            background: #F1404B
+            position: absolute
+        &:after
+            width: 1px
+            height: calc( 100% - 40px )
+            right: 0
+            bottom: 0
+        &::before
+            width: 33px
+            height: 1px
+            left: 0
+            top: 0
 
 .card-wrapper
     .card-header
-        margin-left: 34px
+        margin-left: 15px
+        margin-top: -43px
+        color: #000
         i
             font-size: 50px
             margin-right: 9px
@@ -34,3 +52,16 @@
             font-weight: normal
             font-size: 15px
             line-height: 20px
+
+.after[class^="icon-"]:after
+    display: block
+    content: ""
+    width: 41px
+    height: 36px
+    background: url("../img/Ellipse.svg") no-repeat center center / cover
+    position: absolute
+    z-index: 0
+    top: 50%   
+    left: 50% 
+    transform: translate(-50%, -50%)
+
