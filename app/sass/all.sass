@@ -20,6 +20,9 @@
 @import "parts/header"
 
 /* --- header --- */
+@import "parts/icon_list"
+
+/* --- header --- */
 @import "parts/card"
 
 /* --- header --- */
@@ -43,62 +46,6 @@
 .abs
   position: absolute
 
-.icon-item
-  .icon
-    &-box
-    &-color
-      width: 55px
-      min-width: 55px
-      height: 55px
-      border-radius: 55px
-      margin-right: 15px
-      overflow: hidden
-      position: relative
-      display: block
-      &::before
-        content: ''
-        width: 100%
-        height: 100%
-        position: absolute
-        left: 0
-        right: 0
-        display: block
-    &-pic
-      &::before
-        background: url("../img/icon/pic-color.svg") no-repeat center center / cover
-    &-ones
-      &::before
-        background: url("../img/icon/pic-color.svg") no-repeat center center / cover
-    &-area
-      &::before
-        background: url("../img/icon/pic-color.svg") no-repeat center center / cover
-    &-no_cons
-      &::before
-        background: url("../img/icon/pic-color.svg") no-repeat center center / cover
-
-.darker
-  .icon-item .icon-content
-    .icon-title
-      font-family: $font-family-regolar
-      color: #fff
-      font-style: normal
-      font-weight: 600
-      font-size: 24px
-      line-height: 33px
-    .icon-desc
-      font-family: $font-family-regolar
-      color: #fff
-      font-style: normal
-      font-weight: 300
-      font-size: 15px
-      color: #DCDFE6
-
-#benefits-for-customers
-  background: #E5E5E5
-  z-index: -5
-  .icon-item
-    .icon-box
-      margin-right: 47px
 
 
 
@@ -122,84 +69,30 @@
 
 
 .title-wrap
-  h1
-    font-family: $font-family-regolar
+  padding: 20px 0
+  h1, h2, h3, h4 
     font-style: normal
+    font-family: $font-family-regolar
+    color: $text-black
     font-weight: bold
+  h1
     font-size: 40px
     line-height: 55px
-    color: $text-black
 
   h2
-    font-family: $font-family-regolar
-    font-style: normal
-    font-weight: bold
     font-size: 25px
     line-height: 34px
-    color: $text-black
     &.large
       font-size: 35px
       line-height: 48px
 
-
-.title-box
-  padding: 20px
-  h2
-    font-family: $font-family-regolar
-    font-style: normal
-    font-weight: bold
-    font-size: 25px
-    line-height: 34px
-    color: $text-black
   h4 
-    font-family: $font-family-regolar
-    font-style: normal
-    font-weight: 600
     font-size: 18px
     line-height: 25px
-    color: $text-black
-
-.certified
-  .title-box
-    padding-left: 0
 
 .text-block
-  p
-    font-family: $font-family-regolar
-    font-style: normal
-    font-weight: normal
-    font-size: 15px
-    line-height: 20px
-    color: $text-black
   
-
-
-.icon-item
-  padding: 7px
-  .icon-box i
-    font-size: 25px
-  .icon-content
-    // margin-left: 34px
-    .icon-title         
-      font-family: $font-family-regolar
-      font-style: normal
-      font-weight: normal
-      font-size: 18px
-      line-height: 25px
-      color: $text-black
-      text-transform: uppercase
-    .icon-desc
-      font-family: $font-family-regolar
-      font-style: normal
-      font-weight: normal
-      font-size: 15px
-      line-height: 20px
-      color: $text-black
-  &.icon-defoult
-    margin-bottom: 34px
-    .icon-box 
-      i
-        font-size: 50px
+  
 
 
 
@@ -306,8 +199,8 @@
         margin-top: 75px
 
 .header-benefits
-  padding: 0 15px
-  margin: 0 -15px
+  z-index: 10
+  position: relative
   .btn-wrap
     z-index: 100
     padding: 22px 18px
@@ -328,10 +221,6 @@
         height: 13px
         color: $accent
 
-
-
-.tac
-  text-align: center
 
 .lang 
   .lang-list
@@ -359,3 +248,9 @@
     span
       color: $accent 
       
+
+.benefits-list
+  background: #E5E5E5
+  padding: 50px 50px 10px 50px
+
+

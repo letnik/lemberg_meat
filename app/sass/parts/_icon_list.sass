@@ -1,0 +1,124 @@
+[class*=" icon-"]:before, [class^=icon-]:before
+    position: relative
+    z-index: 1
+
+.panel-top
+    .icon
+        &-item
+            padding: 15px
+            [class^="icon-"]
+                margin-right: 15px
+
+.icon-list-wrap
+    margin: 30px 0
+.icon-item
+    padding: 7px
+    .icon-wrap
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i
+            font-size: 25px
+
+    .icon           
+        &-color
+            width: 55px
+            min-width: 55px
+            height: 55px
+            border-radius: 55px
+            margin-right: 15px
+            overflow: hidden
+            position: relative
+            display: block
+            &::before
+                content: ''
+                width: 100%
+                height: 100%
+                position: absolute
+                left: 0
+                right: 0
+                display: block
+        &-pic
+            &::before
+                background: url("../img/icon/pic-color.svg") no-repeat center center / cover
+        &-ones
+            &::before
+                background: url("../img/icon/pic-color.svg") no-repeat center center / cover
+        &-area
+            &::before
+                background: url("../img/icon/pic-color.svg") no-repeat center center / cover
+        &-no_cons
+            &::before
+                background: url("../img/icon/pic-color.svg") no-repeat center center / cover
+
+    .icon-content
+        // margin-left: 34px
+        .icon
+            &-title         
+                font-family: $font-family-regolar
+                font-style: normal
+                font-weight: normal
+                font-size: 18px
+                line-height: 25px
+                color: $text-black
+                text-transform: uppercase
+            &-desc
+                font-family: $font-family-regolar
+                font-style: normal
+                font-weight: normal
+                font-size: 15px
+                line-height: 20px
+                color: $text-black
+
+
+.defoult
+    &.icon-item
+        margin-bottom: 34px
+        .icon-wrap 
+            margin-right: 47px
+            width: 50px;
+            min-width: 50px;
+            height: 50px;
+            i
+                font-size: 50px
+    
+
+
+.darker
+    .icon-item .icon-content
+        .icon-title
+            font-family: $font-family-regolar
+            color: #fff
+            font-style: normal
+            font-weight: 600
+            font-size: 24px
+            line-height: 33px
+        .icon-desc
+            font-family: $font-family-regolar
+            color: #fff
+            font-style: normal
+            font-weight: 300
+            font-size: 15px
+            color: #DCDFE6
+
+
+.header
+    &-benefits
+        .icon
+            &-list
+                height: 86px
+
+
+
+i
+    &.after[class^="icon-"]:after
+        display: block
+        content: ""
+        width: 41px
+        height: 36px
+        background: url("../img/Ellipse.svg") no-repeat center center / cover
+        position: absolute
+        z-index: 0
+        top: 50%   
+        left: 50% 
+        transform: translate(-50%, -50%)
