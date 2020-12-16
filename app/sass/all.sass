@@ -93,7 +93,33 @@
     font-size: 18px
     line-height: 25px
 
-.text-block
+.breadcrumbs
+  margin-top: 86px
+.breadcrumbs-holder
+  width: 100%
+  height: auto
+.breadcrumb-item
+  font-family: $font-family-regolar
+  font-style: normal
+  font-weight: normal
+  font-size: 15px
+  line-height: 20px
+  transition: .2s
+  &::after
+    content: "/"
+    margin: 0 5px
+  span  
+    color: $text-black
+  a   
+    color: $text-dark
+    &:hover 
+      color: $accent
+  &:last-child
+    &::after
+      display: none
+      
+      
+      
   
   
 
