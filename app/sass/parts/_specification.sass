@@ -45,7 +45,10 @@ img
   height: auto
 
 section, footer
-  padding: 40px 0
+  margin: 40px 0
+
+// header, section, footer
+//   overflow: hidden
 
 .size-full
   width: 100%
@@ -99,17 +102,25 @@ section, footer
 
 .vertical-title
   // width: 400px
-  -webkit-transform: rotate(-90deg) translateY(-50%); //Chrome, Safari
-  -moz-transform: rotate(-90deg) translateY(-50%);//Firefox
-  -o-transform: rotate(-90deg) translateY(-50%); //Opera
-  -ms-transform: rotate(-90deg) translateY(-50%); //IE
-  transform: rotate(-90deg) translateY(-50%); //браузеры без префексов
+  -webkit-transform: rotateZ(-90deg) translateY(0%); //Chrome, Safari
+  -moz-transform: rotateZ(-90deg) translateY(0%);//Firefox
+  -o-transform: rotateZ(-90deg) translateY(0%); //Opera
+  -ms-transform: rotateZ(-90deg) translateY(0%); //IE
+  transform: rotateZ(-90deg) translateY(0%); //браузеры без префексов
   width: 400px;
   position: absolute;
   right: -100%;
   text-align: center;
   top: 0;
-
+  // &::before
+  //   content: '';
+  //   height: 1px;
+  //   width: 100vh;
+  //   display: block;
+  //   background: #444;
+  //   position: absolute;
+  //   top: 50%;
+  //   left: -87vh;
 .darker
   background: #252B41
   p
