@@ -45,7 +45,7 @@ img
   height: auto
 
 section, footer
-  margin: 40px 0
+  padding: 40px 0
 
 // header, section, footer
 //   overflow: hidden
@@ -81,7 +81,10 @@ section, footer
      background: $accent
      color: #fff
 
-
+.btn
+  transition:  .3s cubic-bezier(.38,-1.13,.63,2.06) transform, .3s background, .3s color
+  &:focus, &:active
+    transform: rotate3d(0, 1, 0, 90deg) scale(-1,1)
 
 @-moz-document url-prefix()
   button.btn

@@ -17,7 +17,7 @@ $(function(){
     $('.slider-col-2').slick({
       infinite: true,
       slidesToShow: 2,
-      slidesToScroll: 2,
+      slidesToScroll: 1,
       dots: false,
       prevArrow: '<button class="prev"><i class="icon-arrow_left-01"></i></button>',
       nextArrow: '<button class="next"><i class="icon-arrow_right"></i></button>'
@@ -25,7 +25,7 @@ $(function(){
   
   
     $(".slider-col-2").on('afterChange', function(event, slick, currentSlide){
-       $("#counter").text(currentSlide + 2);
+       $("#counter").text(currentSlide + 1);
     });
   });
       
@@ -46,7 +46,7 @@ var options =
         srcNode: 'img',             // grid items (class, node)
         margin: '20px',             // margin in pixel, default: 0px
         width: '300px',             // grid item width in pixel, default: 220px
-        max_width: '380px',              // dynamic gird item width if specified, (pixel)
+        max_width: '330px',              // dynamic gird item width if specified, (pixel)
         resizable: true,            // re-layout if window resize
         transition: 'all 0.5s ease' // support transition for CSS3, default: all 0.5s ease
     }
