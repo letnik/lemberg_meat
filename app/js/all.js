@@ -4,12 +4,18 @@
 $(function() {
     $('.slider-scale').slick({
         dots: false,
-        arrows: false,
+        arrows: true,
         infinite: false,
         speed: 300,
         slidesToShow: 2,
-        adaptiveHeight: true
-  });
+        adaptiveHeight: true,
+        prevArrow: '<button class="prev"><i class="icon-arrow_left-01"></i></button>',
+        nextArrow: '<button class="next"><i class="icon-arrow_right"></i></button>'
+      });
+
+      $(".slider-scale").on('afterChange', function(event, slick, currentSlide){
+        $("#counter").text(currentSlide + 1);
+     });
 });
 
 $(function(){

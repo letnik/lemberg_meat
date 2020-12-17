@@ -33,3 +33,81 @@
         transform: scale(1.1)
         span
             width: 100%
+
+.slider-scale-wrap
+    height: 100%
+
+
+.slider-col-2, .slider-scale
+    .slick-arrow
+        position: absolute
+        color: $accent
+        font-size: 20px
+        background: inherit
+        border: none
+        width: 50px
+        &::before
+            display: inline-block
+            width: 100%
+        
+
+.slider-col-2
+    .slick-arrow
+        top: -52px
+        right: 0
+        &:nth-child(1)
+            right: 100px
+
+.slider-scale
+    .slick-arrow
+        bottom: 28px
+        left: 100px
+        &:nth-child(1)
+            left: 0px
+
+
+
+.slider-col-2-wrap, .slider-scale-wrap
+    .counter
+        color: $text-dark
+        font-family: $font-family-regolar
+        font-style: normal
+        font-weight: normal
+        font-size: 15px
+        letter-spacing: 0.05em
+
+.slider-col-2-wrap
+    .counter
+        top: -50px
+        right: 62px
+
+.slider-scale-wrap
+    .counter
+        bottom: -69px
+        left: 170px
+        
+    
+    
+
+.slider-text-wrap
+    padding: 35px 30px 30px 39px
+    background: #F4F5F9
+    box-shadow: 0px 0px 15px rgba(132, 130, 155, 0.25)
+    .slider-text
+        font-family: $font-family-regolar
+        color: $text-black
+        font-style: normal
+        &-title
+            margin-bottom: 10px
+            font-weight: 600
+            font-size: 18px
+            line-height: 25px
+            text-transform: uppercase
+            span
+            margin-right: 10px
+            font-size: 25px
+            line-height: 34px
+            margin-right: 11.24px
+        .slider-text-contetnt 
+            font-size: 15px
+            line-height: 20px
