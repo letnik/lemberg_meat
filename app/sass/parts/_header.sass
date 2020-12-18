@@ -2,18 +2,64 @@ header
     height: 50vh
 .header
     &.home
-        padding-top: 86px
         height: 100vh
     &-img
+        margin-top: 86px
         transform: translateX(-85px)
         height: calc(100vh - 172px)
         overflow: hidden
         img
             min-width: 100% 
-    &-benefits
+    &-benefits                 
+        z-index: 10
+        position: relative
+        .btn-wrap
+            z-index: 100
+            padding: 22px 18px
+            a
+                font-family: $font-family-regolar
+                font-style: normal
+                font-weight: normal
+                font-size: 18px
+                line-height: 25px
+                text-align: center
+                letter-spacing: 0.05em
+                color: #FFFFFF
+                display: flex
+                justify-content: center
+                flex-direction: column
+                &:after
+                    margin-top: 3px
+                    content: ""
+                    display: block
+                    width: 143px
+                    height: 13px
+                    background: url('../img/arrow-long.svg') no-repeat center center / contain
+
         .icon
             &-list
                 height: 86px
-            &-item                   
+            &-item  
 
+
+.header-title
+    // background-size: 100%
+    padding: 70px 0 0
+    z-index: 2
+    position: relative
+    margin-bottom: 60px
+    &.defoult
+        background: url("../img/Ellipse 47.png") no-repeat center center / contain
+        height: 310px
+        width: 510px
+    .title-wrap
+        h1
+            font-size: 60px
+            line-height: 66px
+            font-weight: 900
+        p
+            font-size: 36px
+            line-height: 38px
+            font-weight: bold
+            margin: 0
 
