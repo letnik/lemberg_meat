@@ -1,15 +1,64 @@
 header
-    height: 50vh
-.header
-    &.home
+    height: 51vh
+
+.home
+    .header
         height: 100vh
-    &-img
-        margin-top: 86px
-        transform: translateX(-85px)
-        height: calc(100vh - 172px)
-        overflow: hidden
-        img
-            min-width: 100% 
+        &-img
+            margin-top: 86px
+            transform: translateX(-85px)
+            height: calc(100vh - 172px)
+            overflow: hidden
+            img
+                min-width: 100% 
+
+    .header-title
+        &.defoult
+            background: url("../img/Ellipse 47.png") no-repeat center center / contain
+            min-height: 310px
+            min-width: 510px
+            
+        .title-wrap
+                h1
+                    font-size: 60px
+
+
+
+.contacts 
+    .header
+        &-bg
+            background: url("../img/Group 98.png") no-repeat center center / cover
+
+
+.vacancy 
+    .header
+        &-bg
+            background: url("../img/vacancy-bg.jpg") no-repeat center center / cover
+
+.news
+    .header
+        &-bg
+            background: url("../img/news-bg.jpg") no-repeat center center / cover
+
+.article
+    .header
+        &-bg
+            background: url("../img/article-bg.jpg") no-repeat center center / cover
+
+
+.partners
+    .header
+        &-bg
+            background: url("../img/hands.png") no-repeat center center / cover
+
+
+
+.header
+    &-bg
+        background: url("../img/vacancy.jpg") no-repeat center center / cover // Замінити фото заглушку 
+
+            
+
     &-benefits                 
         z-index: 10
         position: relative
@@ -41,7 +90,6 @@ header
                 height: 86px
             &-item  
 
-
 .header-title
     // background-size: 100%
     padding: 70px 0 0
@@ -49,12 +97,18 @@ header
     position: relative
     margin-bottom: 60px
     &.defoult
-        background: url("../img/Ellipse 47.png") no-repeat center center / contain
-        height: 310px
-        width: 510px
+        background: url("../img/header-title-bg.svg") no-repeat center center / cover
+        min-height: 271px
+        min-width: 445px
+        display: inline-block
+        max-width: 650px
+        padding-left: 25px
+        padding-right: 25px
+    &.toper
+        margin-bottom: 125px
     .title-wrap
         h1
-            font-size: 60px
+            font-size: 40px
             line-height: 66px
             font-weight: 900
         p
