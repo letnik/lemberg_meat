@@ -144,8 +144,8 @@
 .bg-inherit
   background: inherit
 
-.mh-90
-  min-height: 90%
+.mb-125
+  margin-bottom: 125px
 
 .shadow
   box-shadow: 0px 0px 15px rgba(132, 130, 155, 0.25)
@@ -176,42 +176,10 @@
     font-size: 20px
     line-height: 27px
 
-.slider-col-2
-  .slick-arrow
-    position: absolute
-    top: -52px
-    right: 0
-    color: $accent
-    font-size: 20px
-    background: inherit
-    border: none
-    &:nth-child(1)
-      right: 100px
-      
-    
+.slider-item
+  padding: 0 15px
 
-.slider-text-wrap
-  padding: 35px 30px 30px 39px
-  background: #F4F5F9
-  box-shadow: 0px 0px 15px rgba(132, 130, 155, 0.25)
-  .slider-text
-    font-family: $font-family-regolar
-    color: $text-black
-    font-style: normal
-    &-title
-      margin-bottom: 10px
-      font-weight: 600
-      font-size: 18px
-      line-height: 25px
-      text-transform: uppercase
-      span
-        margin-right: 10px
-        font-size: 25px
-        line-height: 34px
-        margin-right: 11.24px
-    .slider-text-contetnt 
-      font-size: 15px
-      line-height: 20px
+
 
 
 .text-inner
@@ -222,11 +190,17 @@
       font-style: normal
       font-weight: normal
       font-size: 15px
-      line-height: 40px
+      line-height: 20px
+      padding: 9px 0
       i
         font-size: 20px
         margin-right: 14px
         color: $accent
+      a
+        transition: $transition
+        &:hover
+          color: $accent
+          
 
 
 .feedback
@@ -239,12 +213,16 @@
       width: 75%
       margin: 0 auto
       input 
+        width: 100%
         border: none
         border-bottom: 1px solid $text-dark
         background: inherit
-        padding: 5px
-      label
-        padding: 40px 0 5px
+        // padding-bottom: 10.5px
+        padding: 43px 0 13px
+        font-family: $font-family-regolar
+        font-style: normal
+        font-weight: normal
+        font-size: 15px
         color: $text-dark
       .button-wrap
         margin-top: 75px
@@ -273,12 +251,16 @@
     font-weight: 600
     font-size: 18px
     line-height: 25px
+    color: #252B41
     span
       color: $accent 
       
 
 .benefits-list
-  background: #E5E5E5
+  background: #F4F5F9
   padding: 50px 50px 10px 50px
+
+.section-one
+  padding-top: 110px
 
 
