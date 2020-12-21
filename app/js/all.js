@@ -62,3 +62,44 @@ var options =
 }
 
 
+
+
+// accordion
+
+$(function(){
+	var accItem = document.getElementsByClassName('accordionItem');
+    var accHD = document.getElementsByClassName('accordionItemHeading');
+    for (i = 0; i < accHD.length; i++) {
+        accHD[i].addEventListener('click', toggleItem, false);
+    }
+    function toggleItem() {
+        var itemClass = this.parentNode.className;
+        for (i = 0; i < accItem.length; i++) {
+            accItem[i].className = 'accordionItem close';
+        }
+        if (itemClass == 'accordionItem close') {
+            this.parentNode.className = 'accordionItem open';
+        }
+    }
+});
+
+
+
+
+$('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: false,
+    asNavFor: '.slider-nav'
+  });
+  $('.slider-nav').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: false,
+    arrows: false,
+    // centerMode: true,
+    focusOnSelect: true
+  });
+      
