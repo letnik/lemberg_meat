@@ -16,13 +16,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="css/fontello.css">
-
+      
+    <!-- fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+    
     <!-- My CSS -->
     <link rel="stylesheet" type="text/css" href="css/all.css">
 
   </head>
   <body>
-    <div id="wrap_all" class="wrap_all is-panel-left is-panel-right">
+    <div id="wrap_all" class="wrap_all is-panel-left is-panel-right product">
 
       <div class="panel-top">
         <div class="panel-wrap">
@@ -64,62 +67,99 @@
       </div>
 
       <div class="panel-left">
-        <div class="panel-wrap rel">
-          <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="nav-humburger">
-            <nav class="nav d-flex align-items-center justify-content-center">
-              <ul class="nav-list ">
-                <li class="nav-item"><a href="#"><span>Головна</span></a></li>
-                <li class="nav-item"><a href="#"><span>Про нас</span></a></li>
-                <li class="nav-item"><a href="#"><span>Новини</span></a></li>
-                <li class="nav-item"><a href="#"><span>Контакти</span></a></li>
-              </ul>
-            </nav> 
-          </div>
-          <div class="nav-secondery">
-              <nav class="nav">
-                <ul class="nav-list">
-                  <li class="nav-item">
-                    <a href="#">
-                      <span class="nav-icon">
-                        <i class="icon"></i>
-                        <i class="icon-hover"></i>
-                      </span>
-                      <span>Свинячі півтуші</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#">
-                      <span class="nav-icon">
-                        <i class="icon"></i>
-                        <i class="icon-hover"></i>
-                      </span>
-                      <span>Елементи свинячі</span>
-                    </a>
-                  </li>
-                  <li class="nav-item"><a href="#">
-                    <a href="#">
-                      <span class="nav-icon">
-                        <i class="icon"></i>
-                        <i class="icon-hover"></i>
-                      </span>
-                      <span>Субпродукти</span>
-                    </a>
-                  </li>
+        <div class="panel-wrap d-flex flex-column justify-content-between">
+
+          <div class="nav-box">
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="nav-humburger">
+              <nav class="nav d-flex align-items-center justify-content-center">
+                <ul class="nav-list ">
+                  <li class="nav-item"><a href="#"><span>Головна</span></a></li>
+                  <li class="nav-item"><a href="#"><span>Про нас</span></a></li>
+                  <li class="nav-item"><a href="#"><span>Новини</span></a></li>
+                  <li class="nav-item"><a href="#"><span>Контакти</span></a></li>
                 </ul>
-              </nav>
+              </nav> 
+            </div>
+            <div class="nav-secondery">
+                <nav class="nav">
+                  <ul class="nav-list">
+                    <li class="nav-item">
+                      <a href="#">
+                        <span class="nav-icon">
+                          <i class="icon"></i>
+                          <i class="icon-hover"></i>
+                        </span>
+                        <span>Свинячі півтуші</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#">
+                        <span class="nav-icon">
+                          <i class="icon"></i>
+                          <i class="icon-hover"></i>
+                        </span>
+                        <span>Елементи свинячі</span>
+                      </a>
+                    </li>
+                    <li class="nav-item"><a href="#">
+                      <a href="#">
+                        <span class="nav-icon">
+                          <i class="icon"></i>
+                          <i class="icon-hover"></i>
+                        </span>
+                        <span>Субпродукти</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+            </div>
           </div>
-          <div class="scroll-down abs">
-            в низ
+
+          <div class="scroll-down">
+            <a href="#potential-customers">
+              
+              <div class="mouse_scroll">
+
+                <div class="mouse">
+                  <div class="wheel"></div>
+                </div>
+                <div>
+                  <span class="m_scroll_arrows unu"></span>
+                  <span class="m_scroll_arrows doi"></span>
+                  <span class="m_scroll_arrows trei"></span>
+                </div>
+              </div>
+
+            </a>
           </div>
+
         </div>
       </div>
 
-      <header class="header">
+      
+      <section class="breadcrumbs">
+        <div class="container">
+          <div class="row">
+            <div class="col-auto">
+              <div class="breadcrumbs-holder">
+                <ul class="breadcrumb d-flex">
+                  <li class="breadcrumb-item"><a href="#">Головна</a></li>
+                  <li class="breadcrumb-item"><a href="#">Продукція</a></li>
+                  <li class="breadcrumb-item"><a href="#">Елементи</a></li>
+                  <li class="breadcrumb-item active"><span>Кості голі</span></li>
+                </ul> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <header class="header">
         <div class="container-fluid">
           <div class="row align-items-center">
             <div class="col-1 rel">
@@ -131,11 +171,211 @@
             </div>
           </div>
         </div>
-      </header>
+      </header> -->
 
       <div class="main">
+
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-5">
+
+                <div class="slider-for">
+                  <a href="img/product-1.jpg" data-fancybox="gallery" data-caption="Абра_кадабра_1"><img src="img/product-1.jpg" alt=""></a>
+                  <a href="img/product-1.jpg" data-fancybox="gallery" data-caption="Абра_кадабра_1"><img src="img/product-1.jpg" alt=""></a>
+                  <a href="img/product-1.jpg" data-fancybox="gallery" data-caption="Абра_кадабра_1"><img src="img/product-1.jpg" alt=""></a>
+                </div>
+
+                <div class="slider-nav">
+                  <div class="slider-nav-item"><img src="img/product-small-1.jpg" alt=""></div>
+                  <div class="slider-nav-item"><img src="img/product-small-1.jpg" alt=""></div>
+                  <div class="slider-nav-item"><img src="img/product-small-1.jpg" alt=""></div>
+                </div>
+
+              </div>
+
+              <div class="col-7">
+
+                <div class="title-wrap">
+                  <h1>Ошийок свинячий</h1>
+                  <p>Виробник: <i class="icon-ua"></i> Україна</p>
+                </div>
+
+                
+                <div class="custom_tabs">
+
+                  <div class="accordionWrapper">
+
+                    <div class="accordionItem open">
+                      <h2 class="accordionItemHeading">Термін придатності і умови зберігання </h2>
+                      <div class="accordionItemContent d-flex justify-content-between">
+                        <div class="row">
+
+                          <div class="col-6 d-flex">
+                            <div class="icon-box">
+                              <i class="icon-thermometer-01"></i>
+                            </div>
+                            <div class="content">
+                              <p>Для охолодженної продукції:
+                                Температура ºС: від -1 до +4
+                                Відносна вологість повітря 85%
+                                Термін придатності: 12 діб</p>
+                            </div>
+                          </div>
+
+                          <div class="col-6 d-flex">
+                            <div class="icon-box">
+                              <i class="icon-snowflake-01"></i>
+                            </div>
+                            <div class="content">
+                              <p>Для замороженої продукції:
+                                Відносна вологість повітря від 95 - 98%. Термін придатності залежно від t ºС :
+                                3 міс. при Т не вище (-12) ºС;
+                                6 міс. при Т не вище (-18) ºС;
+                                7 міс. при Т не вище (-20) ºС;
+                                12 міс. при Т не вище (-25) ºС;</p>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                
+                    <div class="accordionItem close">
+                      <h2 class="accordionItemHeading">Нормативний документ на продукт:
+                      </h2>
+                      <div class="accordionItemContent">
+                        <p>ТУ У 10.1-36027341-001:2013</p>
+                      </div>
+                    </div>
+                
+                    <div class="accordionItem close">
+                      <h2 class="accordionItemHeading">Органолептичні показники:</h2>
+                      <div class="accordionItemContent">
+                        <p>Шийно-підлопаточна частина півтуші, з вмістом сполучної м’язової та жирової тканини в природньому співвідношенні, циліндричної форми. Запах властивий даному виду продукту, без стороннього запаху. Консистенція щільна та пружна, на розрізі м'ясо щільне, при натисканні пальцем ямка швидко вирівнюється. Колір від світло-рожевого до червоного..</p>
+                      </div>
+                    </div>
+
+                    <div class="accordionItem close">
+                      <h2 class="accordionItemHeading">Пакування та види упаковки:</h2>
+                      <div class="accordionItemContent d-flex justify-content-between">
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="subtitle">Запакована у п/е харчову плівку, п/е пакет</div>
+                          </div>
+                          <div class="col-6 d-flex">
+                            <div class="icon-box">
+                              <i class="icon-thermometer-01"></i>
+                            </div>
+                            <div class="content d-flex flex-wrap justify-content-between">
+                              <span>
+                                <p>Для охолодженної продукції:
+                                  Температура ºС: від -1 до +4
+                                  Відносна вологість повітря 85%
+                                  Термін придатності: 12 діб</p>
+                              </span>
+                              <span class="align-self-end"><img src="img/1.jpg" alt="#"></span>
+                            </div>
+                          </div>
+
+                          <div class="col-6 d-flex ">
+                            <div class="icon-box">
+                              <i class="icon-snowflake-01"></i>
+                            </div>
+                            <div class="content d-flex flex-wrap justify-content-between">
+                              <span>
+                                <p>Вага 1 шт., кг: 2,0-2,2 К-ть в ящику, шт:12 Вага гофрокоробки, кг: 24,0-26,4 
+                                  К-ть ящиків на паллеті, шт: 32 
+                                  Вага паллети, кг: 768,0-844,8 
+                                  Розмір паллети д×в×ш, мм: 1200х1800х800 
+                                  Пакувальні матеріали: - п/е харчова плівка ТУ У22.2-33458547-001:2012 - гофрокоробка д×в×ш, мм: 600*200*400</p>
+                              </span>
+                              <span class="align-self-end"><img src="img/2.jpg" alt="#"></span>
+                            </div>
+                          </div>
+
+                          <div class="col-12">
+                            <div class="subtitle">Запакована у п/е харчову плівку, п/е пакет</div>
+                          </div>
+                          <div class="col-6 d-flex">
+                            <div class="icon-box">
+                              <i class="icon-thermometer-01"></i>
+                            </div>
+                            <div class="content d-flex flex-wrap justify-content-between">
+                              <span>
+                                <p>Вага 1 шт., кг: 2,0-2,2 К-ть у ящику, шт:12
+                                  Вага гофрокоробки, кг: 24,0-26,4
+                                  К-ть ящиків на палеті, шт: 32
+                                  Вага палети, кг: 768,0-844,8
+                                  Розмір палети д×в×ш, мм: 1200х1800х800
+                                  Пакувальні матеріали: - в/у пакет 220*420 мм ТУ У 25.2-23882480-001-2004 «Пакети з полімерних матеріалів для пакування харчових продуктів»</p>
+                              </span>
+                              <span class="align-self-end"><img src="img/3.jpg" alt="#"></span>
+                            </div>
+                          </div>
+
+                          <div class="col-6 d-flex">
+                            <div class="icon-box">
+                              <i class="icon-snowflake-01"></i>
+                            </div>
+                            <div class="content d-flex flex-wrap justify-content-between">
+                              <span>
+                                <p>Вага 1 шт., кг: 2,0-2,2 К-ть у ящику, шт:12
+                                  Вага гофрокоробки, кг: 24,0-26,4
+                                  К-ть ящиків на палеті, шт: 32
+                                  Вага палети, кг: 768,0-844,8
+                                  Розмір палети д×в×ш, мм: 1200х1800х800
+                                  Пакувальні матеріали: - в/у пакет 220*420 мм ТУ У 25.2-23882480-001-2004 «Пакети з полімерних матеріалів для пакування харчових продуктів»</p>
+                              </span>
+                              <span class="align-self-end"><img src="img/4.jpg" alt="#"></span>
+                            </div>>
+                          </div>
+
+
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="accordionItem close">
+                      <h2 class="accordionItemHeading">Умови транспортування:</h2>
+                      <div class="accordionItemContent d-flex">
+                        <div class="icon-box">
+                          <i class="icon-car-01"></i>
+                        </div>
+                        <div class="content">
+                          <p>Напівфабрикати транспортують в охолоджувальних або ізотермічних транспортних засобах, що забезпечують збереження якості продукції, відповідно до правил перевезень швидкопсувних вантажів, що діють на відповідному виді транспорту.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         
-        <section class="feedback">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="feedback ">
           <div class="container">
             <div class="row align-items-stretch ledge_up">
               <div class="col-4">
@@ -157,9 +397,7 @@
               <div class="col-8">
                 <div class="form-wrap d-flex flex-column justify-content-between shadow">
                   <div class="text">
-                    <p>Заповніть форму та
-                      отримайте прайс на унікальних  умовах співпраці
-                      </p>
+                    <p>Дізнатись більше про асортимент</p>
                   </div>
                   <div class="form-holder">
                     <form class="form d-flex flex-column justify-content-between">
@@ -245,6 +483,9 @@
 
       <!-- maskedinput JS -->
       <script src="js/jquery.maskedinput.min.js"></script>
+
+      <!-- page-articl-slider JS -->
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
 
       <!-- My JS -->
       <script src="js/all.js"></script>

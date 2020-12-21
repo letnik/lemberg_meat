@@ -27,7 +27,23 @@ header
 .contacts 
     .header
         &-bg
-            background: url("../img/Group 98.png") no-repeat center center / cover
+            background: none
+
+.about-us
+    .header
+        min-height: 65vh
+        .header-img
+            height: 65vh
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            margin: -60px 0 -60px -200px 
+            z-index: -1
+            position: relative
+            img
+                width: 100%
+        &-bg
 
 
 .vacancy 
@@ -55,9 +71,13 @@ header
 
 .header
     &-bg
-        background: url("../img/vacancy.jpg") no-repeat center center / cover // Замінити фото заглушку 
+        background: url("../img/vacancy-bg.jpg") no-repeat center center / cover // Замінити фото заглушку 
 
-            
+    &-text-box
+        padding: 50px 70px   
+        // margin-right: -200px
+        position: relative
+        z-index: 1
 
     &-benefits                 
         z-index: 10
