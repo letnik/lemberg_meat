@@ -145,6 +145,35 @@
         width: 100%
         button
           width: 100%
+    .text-inner
+      i
+        color: $text-black
+      &.solid-left
+        &::before
+          content: ''
+          display: block
+          width: 1px
+          height: 219px
+          background: #222
+          position: absolute
+          left: -36px
+          top: 26px
+
+
+.pagination 
+  padding: 150px
+  &-item
+    display: block
+    margin: 0 12px
+    a
+      padding: 15px 20px
+      transition: $transition
+    &.active
+      a
+        background: $accent
+        color: #fff
+        box-shadow: 0px 0px 15px rgba(241, 64, 75, 0.5)
+
     
 
 .article
@@ -388,8 +417,8 @@
 .vacansy-links
   .link-wrap  
     img 
-      width: 530px
-      height: 150px
+      width: 100%
+      height: auto
       padding: 24.5px
     a
       display: block
