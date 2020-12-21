@@ -14,21 +14,27 @@
       &-item
         a
           color: $text-gray
+          transition: $transition
+          &:hover
+            color: $accent
 
 .footer
   .phone
     a
       display: block
       span
-          color: $text-gray
-          text-transform: uppercase
-          font-family: $font-family-regolar
-          font-size: 15px
-          line-height: 20px
+        color: $text-gray
+        text-transform: uppercase
+        font-family: $font-family-regolar
+        font-size: 15px
+        line-height: 20px
+        &:hover
+          color: $accent
       i 
         font-size: 25px
         color: $text-gray
         margin-right: 10px
+      
 
 
 .footer
@@ -46,6 +52,8 @@
       font-family: $font-family-regolar
       font-size: 15px
       line-height: 20px
+      &:hover
+        color: $accent
   .soc
     &-list 
     &-item
@@ -53,6 +61,8 @@
         color: $text-gray
         padding-left: 15px
         font-size: 25px
+        &:hover
+          color: $accent
 
 
 

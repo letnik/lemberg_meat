@@ -136,6 +136,84 @@
 .text-wrap
   background: #F4F5F9
 
+.vacancy
+  .feedback
+    .form-wrap
+      padding: 48px 55px
+      .form-holder
+        margin: 0
+        width: 100%
+        button
+          width: 100%
+    .text-inner
+      i
+        color: $text-black
+      &.solid-left
+        &::before
+          content: ''
+          display: block
+          width: 1px
+          height: 219px
+          background: #222
+          position: absolute
+          left: -36px
+          top: 26px
+
+
+.pagination 
+  padding: 150px
+  &-item
+    display: block
+    margin: 0 12px
+    a
+      padding: 15px 20px
+      transition: $transition
+    &.active
+      a
+        background: $accent
+        color: #fff
+        box-shadow: 0px 0px 15px rgba(241, 64, 75, 0.5)
+
+    
+
+.article
+  .text-wrap
+    background: inherit
+    p, li
+      font-family: $font-family-regolar
+      font-style: normal
+      font-weight: normal
+      font-size: 15px
+      line-height: 20px
+      color: $text-black
+    p
+      margin: 23px 0
+        
+    ul
+      width: 75%
+      margin: 13px auto 0
+      li
+        padding: 10px 0
+        display: flex
+        &::before
+          font-family: 'fontello'
+          content: '\f105'
+          font-size: 20px
+          color: #FF9090
+          margin-right: 15px
+  img 
+    float: left
+    margin-right: 30px
+    width: 36%
+
+.popular-news
+  .news-item
+    padding-top: 25px
+          
+      
+
+      
+
 
 .bg-inherit
   background: inherit
@@ -314,6 +392,7 @@
 
 
 
+
 // .products
 
 .products
@@ -363,3 +442,43 @@
     padding: 5px 10px
     margin-left: 15px
     cursor: pointer
+
+.article-item-social
+  margin-top: 165px
+  a
+    color: #FF9090
+    transition: $transition-scale
+    i
+      font-size: 50px
+    &:hover
+      color: $accent
+      transform: scale(1.1)
+      
+
+
+.our-values
+  .icon-list-wrap
+    .icon-item
+      width: 33%
+      padding: 32px 15px
+      .icon-desc
+        font-size: 16px
+      .icon-wrap
+        i
+          font-size: 40px
+          color: $accent
+          margin-right: 10px
+
+.vacansy-links
+  .link-wrap  
+    img 
+      width: 100%
+      height: auto
+      padding: 24.5px
+    a
+      display: block
+      width: 49%
+      height: auto
+      transition: $transition
+      &:hover
+        transform: scale(1.05)

@@ -63,11 +63,28 @@
             height: 100%
     .icon
         opacity: 1
-        &::before
-            background: url('../img/_tmp/cerdo.svg') no-repeat center center / contain
+        &.half-pig
+            &::before
+                background: url('../img/_tmp/cerdo.svg') no-repeat center center / contain
+        &.pig-element
+            &::before
+                background: url('../img/_tmp/cerdo_hover.svg') no-repeat center center / contain
+        &.sub-prod
+            &::before
+                background: url('../img/subprod.svg') no-repeat center center / contain
         &-hover
-            opacity: 0
-            background: url('../img/_tmp/cerdo_hover.svg') no-repeat center center / contain
+            &.half-pig
+                opacity: 0
+                background: url('../img/icon/part_pig_color.svg') no-repeat center center / contain
+            &.pig-element
+                opacity: 0
+                background: url('../img/icon/element_pig_color.svg') no-repeat center center / contain
+            &.sub-prod
+                opacity: 0
+                background: url('../img/icon/subprodukty_color.svg') no-repeat center center / contain
+
+
+                
 
 .nav-item:hover
     a
