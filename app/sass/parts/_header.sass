@@ -27,7 +27,8 @@ header
 .contacts 
     .header
         &-bg
-            background: none
+            background: url("../img/contacts-bg.jpg") no-repeat center center / cover
+
 
 .about-us
     .header
@@ -124,6 +125,18 @@ header
         max-width: 650px
         padding-left: 25px
         padding-right: 25px
+    &.large
+        background: url("../img/header-title-large-bg.svg") no-repeat center center / contain
+        min-height: 320px
+        min-width: 710px
+        display: inline-block
+        max-width: 710px
+        padding-left: 65px
+        padding-right: 55px
+        .title-wrap
+            h1
+                font-size: 28px
+                line-height: 36px
     &.toper
         margin-bottom: 125px
     .title-wrap

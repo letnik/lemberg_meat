@@ -49,7 +49,7 @@ window.onload = function(){
 
 var options =
     {
-        srcNode: 'img',             // grid items (class, node)
+        srcNode: 'a',             // grid items (class, node)
         margin: '20px',             // margin in pixel, default: 0px
         width: '300px',             // grid item width in pixel, default: 220px
         max_width: '330px',              // dynamic gird item width if specified, (pixel)

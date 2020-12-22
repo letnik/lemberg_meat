@@ -10,17 +10,20 @@
     i
         margin-right: 10px
         color: #fff
+        transition: $transition
     p   
         color: #fff
     a
         transition: $transition
         color: #fff
-        &:hover
-            color: $accent
+    
     > *
         padding: 0
         margin: 0
-
+.phone
+    &:hover
+        a, i
+            color: $accent
 .logo
     height: 86px
     display: flex
@@ -29,6 +32,7 @@
         width: auto
         
 .panel-top
+    border-bottom: 1px solid  #C4C4C4
     z-index: 90
     position: absolute
     left: 100px
@@ -37,3 +41,26 @@
     width: calc(100% - 100px)
     .btn-wrap
         margin: 15px 0
+
+
+.lang 
+    &-list
+    &-item
+        margin: auto 5px
+        a 
+            font-family: $font-family-regolar
+            color: $text-black
+            font-style: normal
+            font-weight: normal
+            font-size: 15px
+            line-height: 20px
+            color: #fff
+            transition: all .3s
+            text-transform: uppercase
+            &:hover
+                color: #F1404B
+        &.active
+            a
+                color: #F1404B
+
+        
