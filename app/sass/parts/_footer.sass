@@ -41,12 +41,17 @@
 
 .footer
   padding: 0
-  // .footer-top
+  .footer-top
+    .phone, .nav
+      text-align: center
+    .logo
+      a 
+        margin: 0 auto
   .footer-bottom
     border-top: 0.3px solid #6F6E6E
     padding: 20px 0
   .copyright
-    padding-right: 15px
+    padding: 10px
     a
       display: block
       color: $text-gray
@@ -61,10 +66,36 @@
       a
         color: $text-gray
         padding-left: 15px
+        padding-right: 15px
         font-size: 25px
         &:hover
           color: $accent
 
 
+@media (min-width:1199px)
 
+  .footer
+    padding: 0
+    .soc-list
+      margin: 0 auto
+    .soc-item
+      text-align: center
+      a
+        color: $text-gray
+        // padding-left: 15px
+        // padding-right: 15px
+        font-size: 25px
+        &:hover
+          color: $accent
+  
+@media (min-width:576px)
 
+  .footer
+    .copyright
+      padding: 0 15px 0 0
+    .soc
+      &-list 
+      &-item
+        a
+          padding-left: 15px
+          padding-right: 0 !important
