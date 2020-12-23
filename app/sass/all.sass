@@ -58,8 +58,8 @@
 .abs
   position: absolute
 
-.ledge_up
-  margin-top: -160px
+// .ledge_up
+//   margin-top: -160px
 
 .ledge_down
   padding-bottom: 160px
@@ -152,16 +152,7 @@
     .text-inner
       i
         color: $text-black
-      &.solid-left
-        &::before
-          content: ''
-          display: block
-          width: 1px
-          height: 100%
-          background: #222
-          position: absolute
-          right: -10px
-          top: 0
+
 
 .pagination 
   margin: 100px auto
@@ -227,8 +218,6 @@
 .bg-inherit
   background: inherit
 
-.mb-125
-  margin-bottom: 125px
 
 .shadow
   box-shadow: 0px 0px 15px rgba(132, 130, 155, 0.25)
@@ -516,6 +505,13 @@
 @media screen and ( min-width: 992px )
 
 
+  .mb-lg-125
+    margin-bottom: 125px
+
+  .ledge_up
+    margin-top: -160px
+
+
   .reputation
     .news-item-informer
       width: auto
@@ -529,7 +525,20 @@
 
 
 
+
+
 @media screen and ( min-width: 768px )
+
+  .solid-left
+    &::before
+      content: ''
+      display: block
+      width: 1px
+      height: 100%
+      background: #222
+      position: absolute
+      right: -10px
+      top: 0
 
 
   .article
