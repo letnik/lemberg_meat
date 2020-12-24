@@ -58,8 +58,8 @@
 .abs
   position: absolute
 
-.ledge_up
-  margin-top: -160px
+// .ledge_up
+//   margin-top: -160px
 
 .ledge_down
   padding-bottom: 160px
@@ -152,24 +152,15 @@
     .text-inner
       i
         color: $text-black
-      &.solid-left
-        &::before
-          content: ''
-          display: block
-          width: 1px
-          height: 100%
-          background: #222
-          position: absolute
-          right: -10px
-          top: 0
+
 
 .pagination 
   margin: 100px auto
   &-item
     display: block
-    margin: 0 7px
+    margin: 0 3px
     &.next, &.prev
-      width: 15px
+      width: 3em
       a
         color: $accent
 
@@ -178,7 +169,7 @@
     .pagination-link
       padding: 8px 11px
       transition: $transition
-      font-size: 12px
+      font-size: 13px
     &.active, &:hover
       .pagination-link
         background: $accent
@@ -200,7 +191,7 @@
       margin: 23px 0
         
     ul
-      margin: 13px 0 0 80px
+      margin: 13px 0 0 40px
       li
         padding: 10px 0
         display: flex
@@ -212,8 +203,8 @@
           margin-right: 15px
     img 
       float: left
-      margin-right: 30px
-      width: 36%
+      margin-right: 15px
+      width: 44%
 
 .popular-news
   .news-item
@@ -227,8 +218,6 @@
 .bg-inherit
   background: inherit
 
-.mb-125
-  margin-bottom: 125px
 
 .shadow
   box-shadow: 0px 0px 15px rgba(132, 130, 155, 0.25)
@@ -254,7 +243,7 @@
   align-items: center
   img
     width: auto
-    min-height: 100%;
+    min-height: 100%
     max-width: none
 
 .text
@@ -342,61 +331,45 @@
 
 
 // news
-.news-item
-  margin-bottom: 30px
-.news-item-wrap
-  font-family: $font-family-regolar
-  font-style: normal
-  color: #252B41
 
-.news-item-title
-  font-weight: 600
-  font-size: 20px
+.img-box
+  margin-bottom: 10px
+  img
+    width: 100%
+
+.news-item-content
+  margin-bottom: 25px
 
 .news-item-quote
+  order: 1
   font-weight: normal
   font-size: 15px
-  padding: 5px
+  padding: 2px 0 0
 
 .news-item-informer
-  padding: 5px
-  margin: 10px 10px 10px 0
-  width: 75px
-  justify-content: space-around
-
-.news-item-title
-  margin-top: 20px
-  h2
-    font-size: 20px !important
-    line-height: 22px
-    font-weight: 600
-
-
-.news-item-day
+  order: 2
+  padding: 2px 0 0
+  margin: 0
   width: 100%
-  font-weight: bold
-  font-size: 45px
-  line-height: 50px
-  color: #FF9090
+  justify-content: space-between
 
-.news-item-month, .news-item-year
-  width: 49%
-  font-weight: 600
-  font-size: 15px
-  color: #FF9090
-  
+
+.news-item-month, .news-item-year, .news-item-day
+  font-size: 18px
+  line-height: 30px
+  text-align: center
+  padding: 0 5px 0 0 
+  display: flex
+  color: darken(#FF9090, 9%)
 
 .news-item-social
-  margin-top: 4px
+  margin-top: 0
   a
     font-size: 25px
     color: #252B41
     transition: $transition
     &:hover
       color: #FF9090
-
-
-
 
 
 
@@ -452,12 +425,12 @@
     cursor: pointer
 
 .article-item-social
-  margin-top: 165px
+  margin-top: 0
   a
     color: #FF9090
     transition: $transition-scale
     i
-      font-size: 50px
+      font-size: 28px
     &:hover
       color: $accent
       transform: scale(1.1)
@@ -495,34 +468,165 @@
 
 .grid-gallery
   &-link
-    border-bottom: 1px solid #f1404b;
-    border-left: 1px solid #f1404b;
+    border-bottom: 1px solid #f1404b
+    border-left: 1px solid #f1404b
     position: relative
     display: block
     padding: 5px
-    line-height: 0;
+    line-height: 0
     &:before, &:after
-      display: block;
-      content: "";
-      background: #f1404b;
-      position: absolute;
+      display: block
+      content: ""
+      background: #f1404b
+      position: absolute
     &:before
-      width: 33px;
-      height: 1px;
-      left: 0;
-      top: 0;
+      width: 33px
+      height: 1px
+      left: 0
+      top: 0
     &:after
-      width: 1px;
+      width: 1px
       height: 160px
-      right: 0;
-      bottom: 0;
+      right: 0
+      bottom: 0
 
   
 .values-inner
   padding: 50px 30px 70px
 
 
-@media (min-width:576px)
+.article
+  .news-item-content
+    margin-bottom: 8px
+
+
+
+
+@media screen and ( min-width: 992px )
+
+
+  .mb-lg-125
+    margin-bottom: 125px
+
+  .ledge_up
+    margin-top: -160px
+
+
+  .reputation
+    .news-item-informer
+      width: auto
+    .article-item-social 
+      margin-top: 165px
+      a
+        i
+          font-size: 50px
+        &:hover
+
+
+
+
+
+
+@media screen and ( min-width: 768px )
+
+  .solid-left
+    &::before
+      content: ''
+      display: block
+      width: 1px
+      height: 100%
+      background: #222
+      position: absolute
+      right: -10px
+      top: 0
+
+
+  .article
+    .text-wrap
+      background: inherit
+      p, li
+        font-family: $font-family-regolar
+        font-style: normal
+        font-weight: normal
+        font-size: 15px
+        line-height: 20px
+        color: $text-black
+      p
+        margin: 23px 0
+          
+      ul
+        margin: 13px 0 0 80px
+        li
+          padding: 10px 0
+          display: flex
+          &::before
+            font-family: 'fontello'
+            content: '\f105'
+            font-size: 20px
+            color: #FF9090
+            margin-right: 15px
+      img 
+        float: left
+        margin-right: 30px
+        width: 36%
+
+  // news
+  .news-item
+    margin-bottom: 30px
+    .news-item-wrap
+      font-family: $font-family-regolar
+      font-style: normal
+      color: #252B41
+
+  .news-item-title
+    font-weight: 600
+    font-size: 20px
+
+  .news-item-quote
+    order: 2
+    font-size: 15px
+    padding: 0 5px
+
+  .news-item-informer
+    order: 1
+    padding: 5px
+    margin: 10px 10px 10px 0
+    // width: 75px
+    justify-content: space-around
+
+  .news-item-title
+    margin-top: 20px
+    h2
+      font-size: 20px !important
+      line-height: 22px
+      font-weight: 600
+
+
+  .news-item-day
+    width: 100%
+    font-weight: bold
+    font-size: 45px
+    line-height: 50px
+    color: #FF9090
+
+  .news-item-month, .news-item-year
+    width: 49%
+    font-weight: 600
+    font-size: 15px
+    color: #FF9090
+    
+
+  .news-item-social
+    margin-top: 4px
+    a
+      font-size: 25px
+      color: #252B41
+      transition: $transition
+      &:hover
+        color: #FF9090
+
+
+@media screen and ( min-width: 576px )
 
   .pagination 
     margin: 100px auto
@@ -539,12 +643,10 @@
       .pagination-link
         padding: 15px 20px
         transition: $transition
-        font-size: 18px;
+        font-size: 18px
       &.active, &:hover
         .pagination-link
           background: $accent
           color: #fff
           box-shadow: 0px 0px 15px rgba(241, 64, 75, 0.5)
-
-
 
