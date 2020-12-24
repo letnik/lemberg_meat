@@ -1,66 +1,140 @@
-.address, .phone, .logo
-    padding: 15px
-    margin: 0
-    font-family: Nunito
-    font-weight: 600
-    font-size: 15px
-    line-height: 20px
-    letter-spacing: 0.05em
-    color: #fff
-    i
-        margin-right: 10px
-        color: #fff
-        transition: $transition
-    p   
-        color: #fff
-    a
-        transition: $transition
-        color: #fff
-    
-    > *
-        padding: 0
+.panel-top
+    .address, .phone, .logo
+        padding: 5px 15px
         margin: 0
-.phone
-    &:hover
-        a, i
-            color: $accent
-.logo
-    height: 86px
-    display: flex
-    img
-        height: 100%
-        width: auto
+        font-family: Nunito
+        font-weight: 600
+        font-size: 15px
+        line-height: 20px
+        letter-spacing: 0.05em
+        color: #fff
+        i
+            margin-right: 10px
+            color: #fff
+            transition: $transition
+        p   
+            color: #fff
+        a
+            transition: $transition
+            color: #fff
+        
+        > *
+            padding: 0
+            margin: 0
+    .address, .phone
+        i
+            font-size: 20px
+        span
+            display: none
+    .phone
+        &:hover
+            a, i
+                color: $accent
+    .logo
+        height: 86px
+        display: flex
+        img
+            height: 100%
+            width: auto
         
 .panel-top
-    border-bottom: 1px solid  #C4C4C4
+    // border-bottom: 1px solid  #C4C4C4
     z-index: 90
     position: absolute
-    left: 100px
+    left: 0
     top: 0
     right: 0
-    width: calc(100% - 100px)
+    width: 100%
     .btn-wrap
         margin: 15px 0
 
 
-.lang 
-    &-list
-    &-item
-        margin: auto 5px
-        a 
-            font-family: $font-family-regolar
-            color: $text-black
-            font-style: normal
-            font-weight: normal
-            font-size: 15px
-            line-height: 20px
-            color: #fff
-            transition: all .3s
-            text-transform: uppercase
-            &:hover
-                color: #F1404B
-        &.active
-            a
-                color: #F1404B
+    .lang
+        display: none
+        margin: 0 7px
+        &-list
+        &-item
+            margin: auto 5px
+            a 
+                font-family: $font-family-regolar
+                color: $text-black
+                font-style: normal
+                font-weight: normal
+                font-size: 15px
+                line-height: 20px
+                color: #fff
+                transition: all .3s
+                text-transform: uppercase
+                &:hover
+                    color: #F1404B
+            &.active
+                a
+                    color: #F1404B
 
+
+@media screen and ( min-width: 768px )
+    .panel-top
+        left: 100px
+        width: calc(100% - 100px)
+    .panel-top
+        div[class^=col]:nth-child(1)
+            border-bottom: 1px solid  #C4C4C4
+@media screen and ( min-width: 768px ) and ( max-width: 991px )
+    .header-contact-wrap
+        margin: auto
+
+
+@media screen and ( min-width: 992px )
+    .panel-top
+        .lang
+            display: block
+
+@media screen and ( min-width: 1200px ) and ( max-width: 1250px )
+    .panel-top
+        .address
+            span
+                font-size: 13px
+
+@media screen and ( min-width: 1200px )
+    .panel-top
+        .address, .phone 
+            >*
+                display: flex
+                align-items: center
+            span
+                display: block
         
+
+   
+@media screen and ( min-width: 1400px ) and ( max-width: 1600px )
+    .panel-top 
+        .address
+            max-width: 300px
+
+@media screen and ( min-width: 1800px )
+    .panel-top 
+        .address
+            margin-right: 70px;   
+
+
+    
+
+
+
+
+
+@media screen and ( max-width: 1200px )
+    .address
+        position: relative
+        &:hover
+            span
+                display: block
+                position: absolute
+                top: 150%
+                width: 300px
+                left: 0
+                background: #F4F5F9
+                color:#222
+                padding: 10px 20px
+                border-radius: 5px
+                box-shadow: 0 0 15px 0 rgba(137,146,164,.25);

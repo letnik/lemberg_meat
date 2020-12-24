@@ -1,26 +1,25 @@
 header
-    height: 51vh
-
+    min-height: 100vh
 .home
     .header
-        height: 100vh
         &-img
-            margin-top: 86px
-            transform: translateX(-85px)
-            height: calc(100vh - 172px)
+            // margin-top: 86px
             overflow: hidden
+            margin-left: -42px
             img
                 min-width: 100% 
+                max-width: none
+                height: 100%
 
     .header-title
         &.defoult
             background: url("../img/Ellipse 47.png") no-repeat center center / contain
             min-height: 310px
-            min-width: 510px
+            min-width: auto
             
         .title-wrap
-                h1
-                    font-size: 60px
+            h1
+                font-size: 40px
 
 
 
@@ -71,6 +70,29 @@ header
 
 
 .header
+    padding-top: 86px
+    &-benefits
+        
+        margin-top: 50px;
+        .icon-item .icon-content .icon-title, .icon-item .icon-content .icon-desc
+            color: #fff
+        .icon-item 
+            background: #252b41
+            width: 100%
+            margin: 10px 0
+            .icon-content
+                .icon-title
+                    font-weight: 600
+                    font-size: 20px
+                    line-height: 24px
+                    text-transform: none
+                    sup
+                        font-size: 14px
+
+                .icon-desc
+                    font-weight: 300
+                    font-size: 13px 
+
     &-bg
         background: url("../img/vacancy-bg.jpg") no-repeat center center / cover // Замінити фото заглушку 
 
@@ -79,13 +101,20 @@ header
         // margin-right: -200px
         position: relative
         z-index: 1
-
+    .btn-wrap
+        z-index: 100
+        position: relative
+    .btn
+        background: $accent
+        color: #fff
     &-benefits                 
         z-index: 10
         position: relative
         .btn-wrap
             z-index: 100
-            padding: 22px 18px
+            position: relative
+            padding: 7px 10px 7px 7px
+            display: none
             a
                 font-family: $font-family-regolar
                 font-style: normal
@@ -102,21 +131,34 @@ header
                     margin-top: 3px
                     content: ""
                     display: block
-                    width: 143px
+                    width: 80px
                     height: 13px
                     background: url('../img/arrow-long.svg') no-repeat center center / contain
 
-        .icon
-            &-list
-                height: 86px
-            &-item  
+
+
+@media screen and ( max-width: 400px )
+
+    .home .header-title.defoult
+        padding-top: 40px
+
+
+
+// @media screen and ( max-width: 991px )
+//     .header-benefits
+//         position: absolute
+//         width: 100%
+//         left: 0
+//         right: 0
+//         bottom: 0
+
 
 .header-title
     // background-size: 100%
     padding: 70px 0 0
     z-index: 2
     position: relative
-    margin-bottom: 60px
+    // margin-bottom: 60px
     &.defoult
         background: url("../img/header-title-bg.svg") no-repeat center center / cover
         min-height: 271px
@@ -142,11 +184,131 @@ header
     .title-wrap
         h1
             font-size: 40px
-            line-height: 66px
+            line-height: 50px
             font-weight: 900
         p
-            font-size: 36px
-            line-height: 38px
+            font-size: 25px
+            line-height: 26px
             font-weight: bold
             margin: 0
 
+
+
+
+
+// media START
+
+
+@media screen and ( min-width: 576px )
+    .header-benefits .icon-item
+        width: 40%;
+        max-width: 290px
+@media screen and ( min-width: 768px )
+    .header
+        .btn
+            background: none
+            color: #222
+@media screen and ( min-width: 992px )
+    .home
+        .header
+            min-height: 100vh
+            &-img
+                height: calc(100vh - 211px)
+        .header-title
+            &.defoult
+                min-width: 430px
+    .header
+        min-height: 51vh
+        &-benefits
+            padding-left: 10px
+            margin: 0 0 0 -12px;
+            background: $text-black
+            .icon-item
+                background: none
+                margin: 0
+
+@media screen and ( min-width: 1200px )
+    .home
+        .header
+            height: 100vh
+            &-img
+                transform: translateX(-60px)
+                height: calc(100vh - 172px)
+
+        .header-title
+            margin-bottom: 60px
+            .title-wrap
+                h1
+                    font-size: 60px
+                p
+                    font-size: 36px
+                    line-height: 38px
+            &.defoult
+                min-width: 510px
+
+    .header-benefits 
+        .icon
+            &-list
+                height: 86px
+            &-item
+                width: auto
+        
+@media screen and ( min-width: 1200px ) and ( max-width: 1270px )
+    .header-benefits
+        .icon-item 
+            max-width: 25%
+            .icon-content 
+                .icon-title 
+                    font-size: 17px;
+
+
+@media screen and ( min-width: 1400px )
+    .home .header-img img
+        height: auto
+
+
+@media screen and ( min-width: 1729px )
+    .icon-item
+        .icon           
+            &-color
+                width: 55px
+                min-width: 55px
+                height: 55px
+
+    .header
+        &-benefits
+            .icon-item 
+                .icon-content
+                    .icon-title
+                        font-size: 24px
+                        line-height: 33px
+
+                        sup
+                            font-size: 16px
+
+                    .icon-desc
+                        font-size: 15px 
+
+
+@media screen and ( max-width: 991px )
+    .home .header-img
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60%;
+        height: 100%;
+        margin: 0
+
+
+
+
+
+
+
+
+    
+
+
+
+
+ 

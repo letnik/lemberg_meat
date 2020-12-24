@@ -4,6 +4,23 @@ $hambasewidth: 35px;
 $hamsizemultiplier: 1;
 $text-white:      #F9F9F9
 $border: $text-gray
+
+.hamburger-box
+  position: fixed
+  right: 30px
+  top: 30px
+  z-index: 110
+
+@media only screen and (max-width: 768px)
+  .hamburger-box
+    width: 80px
+    height: 80px
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 50px
+    overflow: hidden
+    background: #fff
 .hamburger
   width: $hambasewidth * $hamsizemultiplier;
   height: 27px * $hamsizemultiplier;
@@ -19,7 +36,7 @@ $border: $text-gray
   font-size: 26px
   color: $text-white
   cursor: pointer
-  margin: 35px auto
+  margin: 0 auto
   transition: .3s cubic-bezier(.38,-1.13,.63,2.06) transform, .3s background, .3s color
   transform: scale(1)
   &:hover
@@ -63,5 +80,9 @@ $border: $text-gray
         -webkit-transform: rotate(-135deg);
         transform: rotate(-135deg);
         margin-top: 8px * $hamsizemultiplier;
-// @media only screen and (max-width: 992px)
 
+@media only screen and (min-width: 768px)
+
+  .hamburger-box
+    left: 30px  
+    right: auto
