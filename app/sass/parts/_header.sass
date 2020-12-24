@@ -1,5 +1,5 @@
 header
-    min-height: 40vh
+    min-height: 45vh
 .home header
     min-height: 100vh
     padding-top: 86px
@@ -157,18 +157,12 @@ header
 
 .header-title
     // background-size: 100%
-    padding: 70px 0 0
     z-index: 2
     position: relative
     // margin-bottom: 60px
     &.defoult
-        background: url("../img/header-title-bg.svg") no-repeat center center / cover
-        min-height: 271px
-        min-width: 445px
-        display: inline-block
-        max-width: 650px
-        padding-left: 25px
-        padding-right: 25px
+        background: url("../img/header-title-bg.svg") no-repeat center center / contain
+        
     &.large
         background: url("../img/header-title-large-bg.svg") no-repeat center center / contain
         min-height: 320px
@@ -181,8 +175,7 @@ header
             h1
                 font-size: 28px
                 line-height: 36px
-    &.toper
-        margin-bottom: 125px
+    
     .title-wrap
         h1
             font-size: 40px
@@ -200,17 +193,68 @@ header
 
 // media START
 
+@media screen and ( max-width: 576px )
+
+    .partners
+        .header-title
+            padding: 85px 0 40px 0
+            .title-wrap h1 
+                font-size: 34px
+
+
+    .header-title
+        padding: 60px 0 10px 0
+        &.defoult
+            min-height: auto
+            min-width: auto
+            display: inline-block
+            width: 100%
+            height: auto
+            padding-left: 28px
+            padding-right: 28px
+
 
 @media screen and ( min-width: 576px )
+
+    .partners
+        .header-title
+            padding: 90px 0 60px 0
+
     .header-benefits .icon-item
         width: 40%;
         max-width: 290px
+
+    .header-title
+        padding: 60px 0 10px 0
+        &.defoult
+            min-height: auto
+            min-width: auto
+            display: inline-block
+            width: 100%
+            height: auto
+            padding-left: 28px
+            padding-right: 28px
+
 @media screen and ( min-width: 768px )
+
     .header
         .btn
             background: none
             color: #222
 @media screen and ( min-width: 992px )
+
+    .header-title
+        padding: 70px 0 0
+        &.defoult
+            min-height: 271px
+            min-width: 445px
+            display: inline-block
+            max-width: 650px
+            padding-left: 25px
+            padding-right: 25px
+        &.toper
+            margin-bottom: 125px
+
     .home
         .header
             min-height: 100vh
@@ -223,11 +267,13 @@ header
         min-height: 51vh
         &-benefits
             padding-left: 10px
-            margin: 0 0 0 -12px;
+            margin: 0 0 0 -12px
             background: $text-black
             .icon-item
                 background: none
                 margin: 0
+  
+
 
 @media screen and ( min-width: 1200px )
     .home

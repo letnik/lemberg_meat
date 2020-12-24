@@ -288,7 +288,7 @@
   .form-wrap
     height: 100%
     background:  #F4F5F9
-    padding: 63px 77px
+    padding: 20px
     .form-holder
       width: 75%
       margin: 0 auto
@@ -440,13 +440,13 @@
 .our-values
   .icon-list-wrap
     .icon-item
-      width: 33%
-      padding: 32px 15px
+      width: 100%
+      padding: 32px 10px
       .icon-desc
-        font-size: 16px
+        font-size: 15px
       .icon-wrap
         i
-          font-size: 40px
+          font-size: 30px
           color: $accent
           margin-right: 10px
 
@@ -458,7 +458,7 @@
       height: auto
       padding: 24.5px
     a
-      width: 49%
+      width: 100%
       height: auto
       transition: $transition
       &:hover
@@ -501,6 +501,20 @@
 
 
 
+@media screen and ( min-width: 1999px )
+
+  .our-values
+    .icon-list-wrap
+      .icon-item
+        width: 33%
+        padding: 32px 15px
+        .icon-desc
+          font-size: 16px
+        
+
+
+
+
 
 @media screen and ( min-width: 992px )
 
@@ -528,6 +542,16 @@
 
 
 @media screen and ( min-width: 768px )
+
+  .our-values
+    .icon-list-wrap
+      .icon-item
+        width: 50%
+        .icon-wrap
+          i
+            font-size: 40px
+            color: $accent
+            margin-right: 10px
 
   .solid-left
     &::before
@@ -628,6 +652,7 @@
 
 @media screen and ( min-width: 576px )
 
+
   .pagination 
     margin: 100px auto
     &-item
@@ -650,3 +675,13 @@
           color: #fff
           box-shadow: 0px 0px 15px rgba(241, 64, 75, 0.5)
 
+  .vacansy-links
+    .link-wrap  
+      a
+        width: 49%
+
+  .feedback
+    .form-wrap
+      padding: 63px 77px
+
+  

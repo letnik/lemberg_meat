@@ -38,7 +38,17 @@ $(function(){
       slidesToScroll: 1,
       dots: false,
       prevArrow: '<button class="prev"><i class="icon-arrow_left-01"></i></button>',
-      nextArrow: '<button class="next"><i class="icon-arrow_right"></i></button>'
+      nextArrow: '<button class="next"><i class="icon-arrow_right"></i></button>',
+
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
     });
   
   

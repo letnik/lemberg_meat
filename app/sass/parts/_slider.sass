@@ -26,9 +26,9 @@
 .slider-col-2
     .slick-arrow
         top: -52px
-        right: 0
+        right: 5px
         &:nth-child(1)
-            right: 100px
+            right: 105px
 
 .slider-scale
     .slick-arrow
@@ -51,7 +51,7 @@
 .slider-col-2-wrap
     .counter
         top: -50px
-        right: 62px
+        right: 67px
 
 .slider-scale-wrap
     .counter
@@ -70,16 +70,16 @@
         color: $text-black
         font-style: normal
         &-title
-            margin-bottom: 10px
+            margin-bottom: 5px
             font-weight: 600
-            font-size: 18px
-            line-height: 25px
+            font-size: 15px
+            line-height: 19px
             text-transform: uppercase
             span
-            margin-right: 10px
-            font-size: 25px
-            line-height: 34px
-            margin-right: 11.24px
+                margin-right: 10px
+                font-size: 22px
+                line-height: 31px
+                margin-right: 8px
         .slider-text-contetnt 
             font-size: 15px
             line-height: 20px
@@ -135,3 +135,35 @@
             transform: scale(1.1)
             span
                 width: 100%
+
+
+@media screen and ( min-width: 768px )
+
+    .slider-col-2
+        .slick-arrow
+            top: -52px
+            right: 0
+            &:nth-child(1)
+                right: 100px
+
+    .slider-col-2-wrap
+        .counter
+            top: -50px
+            right: 62px
+
+@media screen and ( min-width: 576px )
+
+    .slider-text-wrap
+        .slider-text
+            &-title
+                margin-bottom: 10px
+                font-size: 18px
+                line-height: 25px
+                span
+                    margin-right: 10px
+                    font-size: 22px
+                    line-height: 31px
+                    margin-right: 11.24px
+            .slider-text-contetnt 
+                font-size: 15px
+                line-height: 20px
