@@ -10,7 +10,19 @@ $(function() {
         slidesToShow: 2,
         adaptiveHeight: true,
         prevArrow: '<button class="prev"><i class="icon-arrow_left-01"></i></button>',
-        nextArrow: '<button class="next"><i class="icon-arrow_right"></i></button>'
+        nextArrow: '<button class="next"><i class="icon-arrow_right"></i></button>',
+        responsive: [
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
       });
 
       $(".slider-scale").on('afterChange', function(event, slick, currentSlide){

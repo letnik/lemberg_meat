@@ -1,41 +1,6 @@
-.slider-scale
-
-    position: absolute
-    left: 0
-    top: 0px
-    width: 100%
-    height: calc(100% + 200px);
-    top: -100px;
-    display: flex
-    .slick-list, .slick-track
-        height: 100%
-    .slick-track
-        display: flex
-    // transform: scale(1.3)
-    .slider-item
-        transition: all .3s
-        transform: scale(.85)
-        display: flex
-        justify-content: center
-        align-items: center
-        overflow: hidden;
-        img
-            height: 100%
-            width: auto
-            max-width: none
-        span
-            width: 200px
-            overflow: hidden
-            display: flex
-            justify-content: center
-            transition: all .3s
-    .slick-current
-        transform: scale(1.1)
-        span
-            width: 100%
-
 .slider-scale-wrap
     height: 100%
+    margin: 0 -15px
 
 .slick-arrow
     cursor: pointer
@@ -131,3 +96,42 @@
         img
             border: 1px solid #DCDFE6;
             margin: 0;
+
+
+
+
+@media screen and ( min-width: 992px )
+    .slider-scale
+        position: absolute
+        left: 0
+        top: 0px
+        width: 100%
+        height: calc(100% + 200px);
+        top: -100px;
+        display: flex
+        .slick-list, .slick-track
+            height: 100%
+        .slick-track
+            display: flex
+        // transform: scale(1.3)
+        .slider-item
+            transition: all .3s
+            transform: scale(.85)
+            display: flex
+            justify-content: center
+            align-items: center
+            overflow: hidden;
+            img
+                height: 100%
+                width: auto
+                max-width: none
+            span
+                width: 200px
+                overflow: hidden
+                display: flex
+                justify-content: center
+                transition: all .3s
+        .slick-current
+            transform: scale(1.1)
+            span
+                width: 100%

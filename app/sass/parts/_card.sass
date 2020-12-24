@@ -4,15 +4,14 @@
 
 .card
     &-item
-        width: 34%
-        margin: 30px 8%
+        width: 90%
+        margin: 30px auto
         padding: 18px
         border-bottom: 1px solid #F1404B
         border-left: 1px solid #F1404B
         position: relative
         // border-right: 1px solid #ccc
-        &:nth-child(4n)
-            margin-right: 0
+
         &::after, &::before
             display: block
             content: ""
@@ -53,3 +52,31 @@
             font-size: 15px
             line-height: 20px
 
+@media screen and ( min-width: 1400px )
+    .card
+        &-item
+            width: 34%
+            margin: 30px 8%
+            padding: 18px
+            border-bottom: 1px solid #F1404B
+            border-left: 1px solid #F1404B
+            position: relative
+            // border-right: 1px solid #ccc
+            &:nth-child(4n)
+                margin-right: 0
+
+
+@media screen and ( min-width: 992px )
+    .card
+        &-item
+            width: 34%
+            margin: 30px 8%
+
+
+@media screen and ( min-width: 768px )
+    .card
+        &-item
+            width: 42%
+            margin: 30px auto
+            &:nth-child(4n)
+                margin-right: 4%;
