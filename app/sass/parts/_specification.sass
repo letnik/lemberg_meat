@@ -46,8 +46,7 @@ img
 
 section, footer
   padding: 40px 0
-  &.cut-bottom
-    padding-bottom: 0
+
 .section
   padding: 100px 0
 
@@ -122,38 +121,47 @@ section, footer
   background: #fff
 
 
-.vertical-title
-  // width: 400px
-  -webkit-transform: rotateZ(-90deg) translateY(0%) //Chrome, Safari
-  -moz-transform: rotateZ(-90deg) translateY(0%)//Firefox
-  -o-transform: rotateZ(-90deg) translateY(0%) //Opera
-  -ms-transform: rotateZ(-90deg) translateY(0%) //IE
-  transform: rotateZ(-90deg) translateY(0%) //браузеры без префексов
-  width: 400px
-  position: absolute
-  right: -100%
-  text-align: center
-  top: 0
-  // &::before
-  //   content: ''
-  //   height: 1px
-  //   width: 100vh
-  //   display: block
-  //   background: #444
-  //   position: absolute
-  //   top: 50%
-  //   left: -87vh
 .darker
   background: #252B41
   p
     color: #fff
-
+.vertical-title
+  display: none
 @media screen and ( min-width: 768px )
 
   .lighter-md
     background: #fff
   .darker-md
     background: #252B41
+
+  .vertical-title
+    // width: 400px
+    display: block
+    -webkit-transform: rotateZ(-90deg) translateY(0%) //Chrome, Safari
+    -moz-transform: rotateZ(-90deg) translateY(0%)//Firefox
+    -o-transform: rotateZ(-90deg) translateY(0%) //Opera
+    -ms-transform: rotateZ(-90deg) translateY(0%) //IE
+    transform: rotateZ(-90deg) translateY(0%) //браузеры без префексов
+    width: 400px
+    position: absolute
+    right: -100%
+    text-align: center
+    top: 0
+    // &::before
+    //   content: ''
+    //   height: 1px
+    //   width: 100vh
+    //   display: block
+    //   background: #444
+    //   position: absolute
+    //   top: 50%
+    //   left: -87vh
+
+// end @media
+@media screen and ( min-width: 992px )
+
+  .grayer-lg
+    background:  $bg-all
 
 .title-wrap
   padding: 20px 0
@@ -199,3 +207,9 @@ section, footer
 
   .btn
     padding: 18px 25px
+
+@media screen and ( min-width: 768px )
+
+  section, footer
+    &.cut-bottom
+      padding-bottom: 0

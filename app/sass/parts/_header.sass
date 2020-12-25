@@ -37,7 +37,7 @@ header
         min-height: 65vh
         .header-img
             height: 65vh
-            display: flex;
+            display: none;
             justify-content: center;
             align-items: center;
             overflow: hidden;
@@ -73,6 +73,8 @@ header
 
 
 .header
+    .header-title.defoult
+        min-height: 350px
     &-benefits
         
         margin-top: 50px;
@@ -99,7 +101,7 @@ header
         background: url("../img/vacancy-bg.jpg") no-repeat center center / cover // Замінити фото заглушку 
 
     &-text-box
-        padding: 50px 70px   
+        padding: 30px
         // margin-right: -200px
         position: relative
         z-index: 1
@@ -213,6 +215,34 @@ header
             padding-left: 28px
             padding-right: 28px
 
+@media screen and ( max-width: 991px )
+    .about-us 
+        .header
+
+            .responsive[class*="col-"]
+                position: absolute;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                &::before
+                    content: ''
+                    display: block
+                    width: 100%
+                    height: 100%
+                    right: 0
+                    top: 0
+                    background: rgb(255,255,255);
+                    background: linear-gradient(90deg, rgba(255,255,255,1) 25%, rgba(255,255,255,0.5385504543614321) 72%, rgba(255,255,255,0) 100%);  
+                .header-img
+                    height: 100%
+
+                    img
+                        width: auto;
+                        max-width: none;
+                        height: 100%;
+
 
 @media screen and ( min-width: 576px )
 
@@ -241,6 +271,10 @@ header
         .btn
             background: none
             color: #222
+        &-text-box
+            padding: 50px 70px   
+    .about-us .header .header-img
+        display: flex
 @media screen and ( min-width: 992px )
 
     .header-title
@@ -273,8 +307,6 @@ header
                 background: none
                 margin: 0
   
-
-
 @media screen and ( min-width: 1200px )
     .home
         .header
@@ -309,11 +341,9 @@ header
                 .icon-title 
                     font-size: 17px;
 
-
 @media screen and ( min-width: 1400px )
     .home .header-img img
         height: auto
-
 
 @media screen and ( min-width: 1729px )
     .icon-item
@@ -336,7 +366,6 @@ header
 
                     .icon-desc
                         font-size: 15px 
-
 
 @media screen and ( max-width: 991px )
     .home .header-img

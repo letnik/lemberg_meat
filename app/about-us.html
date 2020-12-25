@@ -32,30 +32,34 @@
         <div class="panel-wrap">
           <div class="container-fluid">
             <div class="row justify-content-between">
-              <div class="col-4">
+              <div class="col-sm-4 lighter-md">
                 <div class="logo">
                   <a href="#"><img src="img/logo.svg" alt="#"></a>
                 </div>
               </div>
-              <div class="col-8 d-flex justify-content-between align-items-center darker">
+              <div class="col-8 d-flex justify-content-between align-items-center darker-md">
 
-                <div class="address">
-                  <p><i class="icon-location-01"></i><span>м. Львів, вул. Хмельницького, 176, офіс 212</span></p>
-                </div>
+                <div class="d-none d-md-flex d-xl-block d-xxl-flex align-items-xxl-center ">
 
-                <div class="phone">
-                  <a href="#"><i class="icon-phone-01 "></i><span>+38 (068) 77 99 777</span></a>
+                  <div class="address">
+                    <p><i class="icon-location-01"></i><span>м. Львів, вул. Хмельницького, 176, офіс 212</span></p>
+                  </div>
+
+                  <div class="phone">
+                    <a href="tel:+380687799777"><i class="icon-phone-01 "></i><span>+38 (068) 77 99 777</span></a>
+                  </div>
+
                 </div>
 
                 <div class="lang">
                   <ul class="lang-list d-flex">
-                    <li class="lang-item"><a href="#">ua</a></li>
+                    <li class="lang-item active"><a href="#">ua</a></li>
                     <li class="lang-item"><a href="#">en</a></li>
                     <li class="lang-item"><a href="#">zh</a></li>
                   </ul>
                 </div>
 
-                <div class="btn-wrap">
+                <div class="btn-wrap d-none d-md-block">
                   <button class="btn btn-solid">Замовити дзвінок</button>
                 </div>
               
@@ -66,16 +70,19 @@
            
 
       </div>
+      
+      <div class="hamburger-box">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
 
       <div class="panel-left">
         <div class="panel-wrap d-flex flex-column justify-content-between">
 
           <div class="nav-box">
-            <div class="hamburger">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
             <div class="nav-humburger">
               <nav class="nav d-flex align-items-center justify-content-center">
                 <ul class="nav-list ">
@@ -120,6 +127,7 @@
               </nav>
             </div>
           </div>
+          
 
           <div class="scroll-down">
             <a href="#potential-customers">
@@ -159,13 +167,13 @@
 
       <header class="header">
         <div class="container-fluid g-0">
-          <div class="row align-items-stretch g-0">
-            <div class="col-1 rel grayer">
+          <div class="row align-items-stretch g-0 rel">
+            <div class="col-md-1 rel grayer-lg">
               <div class="vertical-title rotatable">
                 <p>01 Про нас / <span> 02</span></p>
               </div>
             </div>
-            <div class="col-5 grayer d-flex align-items-center">
+            <div class="col-lg-5 col-md-8 grayer-lg d-flex align-items-center">
               <div class="header-text-box">
                 
                 <div class="title-wrap">
@@ -177,7 +185,7 @@
                   
               </div>
             </div>
-            <div class="col-6">
+            <div class="offset-6 offset-lg-0 col-6 responsive">
               <div class="header-img">
                 <img src="img/header_bg.jpg" alt="#">
               </div>
@@ -193,13 +201,13 @@
           <div class="container">
             <div class="row">
   
-              <div class="col-1 rel">
+              <div class="col-md-1 rel">
                 <div class="vertical-title rotatable">
                   <p>02 Наше виробництво / <span>02</span></p>
                 </div>
               </div>
 
-              <div class="col-11">
+              <div class="col-md-11">
                 <div class="grid grid-gallery">
     
                   <a href="img/tab-img-1.png" class="grid-gallery-link" data-fancybox="gallery" data-caption="Абра кадабра 1">
@@ -293,11 +301,8 @@
 
       </div>
 
-
-
-
       <footer class="footer">
-        <div class="footer-top pb-1">
+        <div class="footer-top">
           <div class="container">
             <div class="row justify-content-between align-items-center">
               <div class="col-xl-auto">
@@ -349,26 +354,27 @@
           </div>
         </div>
       </footer>
+
     </div>
 
     <a href="#top" class="scroll-up scroll"></a>
 
-            <!-- jQuery -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
-            
-            <!-- maskedinput JS -->
-            <script type="text/javascript"  src="js/jquery.maskedinput.min.js"></script>
-      
-            <!-- page-articl-slider JS -->
-            <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
-            
+          <!-- jQuery -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
           
-            <!-- My JS -->
-            <script type="text/javascript" src="js/gridify.js"></script>
-      
-            <!-- My JS -->
-            <script src="js/all.js"></script>
+          <!-- maskedinput JS -->
+          <script type="text/javascript"  src="js/jquery.maskedinput.min.js"></script>
+    
+          <!-- page-articl-slider JS -->
+          <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+          
+        
+          <!-- My JS -->
+          <script type="text/javascript" src="js/gridify.js"></script>
+    
+          <!-- My JS -->
+          <script src="js/all.js"></script>
 
       <script>
         jQuery(function($){

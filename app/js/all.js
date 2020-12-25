@@ -37,6 +37,7 @@ $(function(){
       slidesToShow: 2,
       slidesToScroll: 1,
       dots: false,
+      adaptiveHeight: true,
       prevArrow: '<button class="prev"><i class="icon-arrow_left-01"></i></button>',
       nextArrow: '<button class="next"><i class="icon-arrow_right"></i></button>',
 
