@@ -61,8 +61,8 @@
 // .ledge_up
 //   margin-top: -160px
 
-.ledge_down
-  padding-bottom: 160px
+// .ledge_down
+//   padding-bottom: 160px
 
   // &.location
   //   padding-bottom: 250px
@@ -132,8 +132,9 @@
 
 .location-item
   .text-wrap
-    padding: 54px 80px
+    padding: 20px
     min-height: 100%
+    margin-bottom: 20px
     i
       color: $accent
 
@@ -519,11 +520,21 @@
 @media screen and ( min-width: 992px )
 
 
+  
+  .ledge_down
+    padding-bottom: 160px
+
+
   .mb-lg-125
     margin-bottom: 125px
 
   .ledge_up
     margin-top: -160px
+
+
+  .feedback
+    .form-wrap
+      padding: 63px 77px
 
 
   .reputation
@@ -653,6 +664,11 @@
 @media screen and ( min-width: 576px )
 
 
+  .location-item
+    .text-wrap
+      padding: 54px 80px
+      margin-bottom: 0
+
   .pagination 
     margin: 100px auto
     &-item
@@ -680,8 +696,6 @@
       a
         width: 49%
 
-  .feedback
-    .form-wrap
-      padding: 63px 77px
+ 
 
   
