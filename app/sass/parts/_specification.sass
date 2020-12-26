@@ -125,8 +125,9 @@ section, footer
   background: #252B41
   p
     color: #fff
-.vertical-title
-  display: none
+// .vertical-title
+//   display: none
+
 @media screen and ( min-width: 768px )
 
   .lighter-md
@@ -134,19 +135,36 @@ section, footer
   .darker-md
     background: #252B41
 
-  .vertical-title
-    // width: 400px
+  .vertical-title-wrap
     display: block
     -webkit-transform: rotateZ(-90deg) translateY(0%) //Chrome, Safari
     -moz-transform: rotateZ(-90deg) translateY(0%)//Firefox
     -o-transform: rotateZ(-90deg) translateY(0%) //Opera
     -ms-transform: rotateZ(-90deg) translateY(0%) //IE
     transform: rotateZ(-90deg) translateY(0%) //браузеры без префексов
-    width: 400px
-    position: absolute
-    right: -100%
-    text-align: center
-    top: 0
+    display: block;
+    transform: rotateZ(-90deg) translateY(0);
+    width: 1px;
+    height: 1px;
+
+  .vertical-title
+    display: block;
+    width: 450px;
+    position: absolute;
+    right: 0px;
+    text-align: right;
+    top: -27px;
+    padding: 0 30px 
+    &.vertical-title-center
+      right: -225px
+      text-align: center
+    &.vertical-title-end
+      right: -450px
+      text-align: left
+    &.offset-off
+      padding: 0
+    &.offset-large
+      padding: 0 70px 
     // &::before
     //   content: ''
     //   height: 1px
