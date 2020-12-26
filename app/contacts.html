@@ -28,22 +28,34 @@
         <div class="panel-wrap">
           <div class="container-fluid">
             <div class="row justify-content-between">
-              <div class="col-4">
+              <div class="col-sm-4 lighter-md">
                 <div class="logo">
                   <a href="#"><img src="img/logo.svg" alt="#"></a>
                 </div>
               </div>
-              <div class="col-8 d-flex justify-content-between align-items-center darker">
+              <div class="col-8 d-flex justify-content-between align-items-center darker-md">
 
-                <div class="address">
-                  <span><p><i class="icon-location-01"></i>м. Львів, вул. Хмельницького, 176, офіс 212</span></p>
+                <div class="d-none d-md-flex d-xl-block d-xxl-flex align-items-xxl-center ">
+
+                  <div class="address">
+                    <p><i class="icon-location-01"></i><span>м. Львів, вул. Хмельницького, 176, офіс 212</span></p>
+                  </div>
+
+                  <div class="phone">
+                    <a href="tel:+380687799777"><i class="icon-phone-01 "></i><span>+38 (068) 77 99 777</span></a>
+                  </div>
+
                 </div>
 
-                <div class="phone d-flex">
-                  <span><i class="icon-phone-01"></i><a href="tel:+380969954">+38 (096) 99 54 970</a></span>
+                <div class="lang">
+                  <ul class="lang-list d-flex">
+                    <li class="lang-item active"><a href="#">ua</a></li>
+                    <li class="lang-item"><a href="#">en</a></li>
+                    <li class="lang-item"><a href="#">zh</a></li>
+                  </ul>
                 </div>
-              
-                <div class="btn-wrap">
+
+                <div class="btn-wrap d-none d-md-block">
                   <button class="btn btn-solid">Замовити дзвінок</button>
                 </div>
               
@@ -54,16 +66,19 @@
            
 
       </div>
+      
+      <div class="hamburger-box">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
 
       <div class="panel-left">
         <div class="panel-wrap d-flex flex-column justify-content-between">
 
           <div class="nav-box">
-            <div class="hamburger">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
             <div class="nav-humburger">
               <nav class="nav d-flex align-items-center justify-content-center">
                 <ul class="nav-list ">
@@ -108,6 +123,7 @@
               </nav>
             </div>
           </div>
+          
 
           <div class="scroll-down">
             <a href="#potential-customers">
@@ -148,7 +164,7 @@
       <header class="header header-bg d-flex align-items-center">
         <div class="container">
           <div class="row">
-            <div class="col-auto">
+            <div class="col">
               <div class="header-title defoult d-flex justify-content-center align-items-center toper">
                 <div class="title-wrap">
                   <h1>Контакти</h1>
@@ -163,15 +179,15 @@
         <section class="location ledge_up">
           <div class="container">
             <div class="row">
-              <div class="col-1 rel">
+              <div class="col-md-1 rel">
                 <div class="vertical-title d-flex align-items-center rotatable">
                   <p>01 Головний офіс / <span>02</span></p>
                 </div>
               </div>
-              <div class="col-11">
+              <div class="col-md-11">
                 <div class="location-item">
-                  <div class="row align-items-stretch g-lg-0 gy-4">
-                    <div class="col-xl-5 col-lg-6 col-12">
+                  <div class="row align-items-stretch g-0">
+                    <div class="col-xl-5 col-lg-6">
                       <div class="text-wrap d-flex flex-column justify-content-center shadow">
                         <div class="title title-wrap">
                           <h2>Головний офіс:</h2>
@@ -190,8 +206,8 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-xl-7 col-lg-6 col-12">
-                      <div id="map" class="map size-full shadow">
+                    <div class="col-xl-7 col-lg-6">
+                      <div id="map" class="map size-full">
                         <div class="map-tmp">
                           <img src="img/image 45.png" alt="#">
                         </div>
@@ -207,12 +223,12 @@
         <section class="location section ledge_down">
           <div class="container">
             <div class="row">
-              <div class="col-1 rel">
+              <div class="col-md-1 rel">
                 <div class="vertical-title d-flex align-items-start rotatable">
                   <p>02 Виробництво / <span>02</span></p>
                 </div>
               </div>
-              <div class="col-11">
+              <div class="col-md-11">
                 <div class="location-item">
                   <div class="row align-items-stretch g-lg-0 gy-4">
                     <div class="col-xl-5 col-lg-6 col-12">
@@ -231,8 +247,8 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-xl-7 col-lg-6 col-12">
-                      <div id="map" class="map size-full shadow">
+                    <div class="col-xl-7 col-lg-6">
+                      <div id="map" class="map">
                         <div class="map-tmp">
                           <img src="img/image 45.png" alt="#">
                         </div>
@@ -248,7 +264,7 @@
         <section class="feedback cut-bottom">
           <div class="container">
             <div class="row align-items-stretch ledge_up">
-              <div class="col-lg-4 col-md-6 col-12">
+              <div class="col-lg-4 col-md-6">
                 <div class="text-wrap bg-inherit">
                   <div class="title title-wrap mb-125">
                     <h2 class="large">Зворотній зв’язок</h2>
@@ -265,7 +281,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-8 col-md-6 col-12">
+              <div class="col-lg-8 col-md-6">
                 <div class="form-wrap d-flex flex-column justify-content-between shadow">
                   <div class="text centro">
                     <p>Заповніть форму таотримайте прайс на унікальних  умовах співпраці
@@ -292,7 +308,7 @@
 
 
       <footer class="footer">
-        <div class="footer-top pb-1">
+        <div class="footer-top">
           <div class="container">
             <div class="row justify-content-between align-items-center">
               <div class="col-xl-auto">
