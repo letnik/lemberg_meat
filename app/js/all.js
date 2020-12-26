@@ -135,3 +135,39 @@ $('.slider-for').slick({
     focusOnSelect: true
   });
       
+
+
+
+
+
+$(document).ready(function(){
+
+  $(window).scroll(function() {
+    winPos = $(window).scrollTop();
+    if (winPos >= 400) {
+      $('.scroll-down').fadeOut();
+    }
+    else {
+      $('.scroll-down').fadeIn();
+    }
+  });
+
+});
+
+
+ 
+$(document).ready(function(){
+	$(".scroll-box").on("click","a", function (event) {
+		//отменяем стандартную обработку нажатия по ссылке
+		event.preventDefault();
+
+		//забираем идентификатор бока с атрибута href
+		var id  = $(this).attr('href'),
+
+		//узнаем высоту от начала страницы до блока на который ссылается якорь
+			top = $(id).offset().top;
+		
+		//анимируем переход на расстояние - top за 1500 мс
+		$('body,html').animate({scrollTop: top}, 1000);
+	});
+});
