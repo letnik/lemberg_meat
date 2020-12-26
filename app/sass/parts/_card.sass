@@ -52,6 +52,20 @@
             font-size: 15px
             line-height: 20px
 
+@media screen and ( min-width: 768px )
+    .card
+        &-item
+            width: 42%
+            margin: 30px auto
+            &:nth-child(4n)
+                margin-right: 4%;
+
+@media screen and ( min-width: 992px )
+    .card
+        &-item
+            width: 34%
+            margin: 30px 8%
+
 @media screen and ( min-width: 1400px )
     .card
         &-item
@@ -66,17 +80,3 @@
                 margin-right: 0
 
 
-@media screen and ( min-width: 992px )
-    .card
-        &-item
-            width: 34%
-            margin: 30px 8%
-
-
-@media screen and ( min-width: 768px )
-    .card
-        &-item
-            width: 42%
-            margin: 30px auto
-            &:nth-child(4n)
-                margin-right: 4%;
