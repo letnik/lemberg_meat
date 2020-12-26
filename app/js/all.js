@@ -114,7 +114,16 @@ $('.slider-for').slick({
     slidesToScroll: 1,
     arrows: false,
     fade: false,
-    asNavFor: '.slider-nav'
+    asNavFor: '.slider-nav',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+
+        }
+      }
+    ]
   });
   $('.slider-nav').slick({
     slidesToShow: 2,
