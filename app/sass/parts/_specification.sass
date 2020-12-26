@@ -53,6 +53,22 @@ section, footer
 // header, section, footer
 //   overflow: hidden
 
+i.icon-arrow
+  &:before
+    content: ''
+    width: 50px
+    height: 20px
+    display: block
+  &.left
+    &::before
+      background: url("../img/icon/arrow-left.svg") no-repeat center center / contain
+  &.right
+    &::before
+      background: url("../img/icon/arrow-right.svg") no-repeat center center / contain
+    
+
+
+
 .size-full
   width: 100%
   height: 100%
@@ -127,7 +143,21 @@ section, footer
     color: #fff
 .vertical-title
   display: none
+
+.feedback
+  .text-wrap
+    text-align: center
+    .text-inner ul li 
+      justify-content: center
+
+
 @media screen and ( min-width: 768px )
+
+  .feedback
+    .text-wrap
+      text-align: start
+      .text-inner ul li 
+        justify-content: start
 
   .lighter-md
     background: #fff
@@ -163,7 +193,7 @@ section, footer
   .grayer-lg
     background:  $bg-all
   .translateY-lg
-    transform: translateY(-125px);
+    transform: translateY(-125px)
 .title-wrap
   padding: 20px 0
   h1, h2, h3, h4 

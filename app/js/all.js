@@ -9,8 +9,8 @@ $(function() {
         speed: 300,
         slidesToShow: 2,
         adaptiveHeight: true,
-        prevArrow: '<button class="prev"><i class="icon-arrow_left-01"></i></button>',
-        nextArrow: '<button class="next"><i class="icon-arrow_right"></i></button>',
+        prevArrow: '<button class="prev"><i class="icon-arrow left"></i></button>',
+        nextArrow: '<button class="next"><i class="icon-arrow right"></i></button>',
         responsive: [
             {
               breakpoint: 480,
@@ -38,8 +38,8 @@ $(function(){
       slidesToScroll: 1,
       dots: false,
       adaptiveHeight: true,
-      prevArrow: '<button class="prev"><i class="icon-arrow_left-01"></i></button>',
-      nextArrow: '<button class="next"><i class="icon-arrow_right"></i></button>',
+      prevArrow: '<button class="prev"><i class="icon-arrow left"></i></button>',
+      nextArrow: '<button class="next"><i class="icon-arrow right"></i></button>',
 
       responsive: [
         {
