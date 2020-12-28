@@ -155,6 +155,7 @@ $(document).ready(function(){
 });
 
 
+
  
 $(document).ready(function(){
 	$(".scroll-box").on("click","a", function (event) {
@@ -170,4 +171,10 @@ $(document).ready(function(){
 		//анимируем переход на расстояние - top за 1500 мс
 		$('body,html').animate({scrollTop: top}, 1000);
 	});
+});
+
+
+
+jQuery(function($){
+  $("#phone").mask("(999) 999-9999");
 });
