@@ -178,3 +178,26 @@ $(document).ready(function(){
 jQuery(function($){
   $("#phone").mask("(999) 999-9999");
 });
+
+
+$('.slider-partners').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  prevArrow: '<button class="prev"><i class="icon-arrow left"></i></button>',
+  nextArrow: '<button class="next"><i class="icon-arrow right"></i></button>',
+  responsive: [
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+
+$(".slider-partners").on('afterChange', function(event, slick, currentSlide){
+  $("#counter").text(currentSlide + 1);
+});
+
