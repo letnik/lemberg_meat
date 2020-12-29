@@ -3,6 +3,11 @@ header
 .home header
     min-height: 100vh
     padding-top: 86px
+
+.header
+    .header-title
+        &.defoult
+            min-height: 310px
 .home
     .header
         &-img
@@ -17,12 +22,13 @@ header
     .header-title
         &.defoult
             background: url("../img/Ellipse 47.png") no-repeat center center / contain
-            min-height: 310px
             min-width: auto
             
         .title-wrap
             h1
                 font-size: 40px
+                line-height: 44px;
+
 
 
 
@@ -73,8 +79,6 @@ header
 
 
 .header
-    .header-title.defoult
-        min-height: 350px
     &-benefits
         
         margin-top: 50px;
@@ -96,6 +100,7 @@ header
                 .icon-desc
                     font-weight: 300
                     font-size: 13px 
+                    padding: 0
 
     &-bg
         background: url("../img/vacancy-bg.jpg") no-repeat center center / cover // Замінити фото заглушку 
@@ -106,8 +111,9 @@ header
         position: relative
         z-index: 1
     .btn-wrap
-        z-index: 100
+        z-index: 10
         position: relative
+        text-align: center
     .btn
         background: $accent
         color: #fff
@@ -194,6 +200,9 @@ header
 
 
 // media START
+@media screen and ( min-width: 500px ) and ( max-width: 768px )
+    .btn-wrap
+        margin-top: 30px
 
 @media screen and ( max-width: 576px )
 
@@ -205,7 +214,7 @@ header
 
 
     .header-title
-        padding: 60px 0 10px 0
+        padding: 20vw 0 10px 0;
         &.defoult
             min-height: auto
             min-width: auto
@@ -255,7 +264,7 @@ header
         max-width: 290px
 
     .header-title
-        padding: 60px 0 10px 0
+        padding: 80px 0 10px 0
         &.defoult
             min-height: auto
             min-width: auto
@@ -266,26 +275,31 @@ header
             padding-right: 28px
 
 @media screen and ( min-width: 768px )
-
+            
     .header-title.large
         .title-wrap
             h1
                 font-size: 28px
                 line-height: 36px
+    .header-title
+        padding: 90px 0 10px 0
+
     .header
         .btn
-            background: none
+            background: #fff
             color: #222
         &-text-box
             padding: 50px 70px   
     .about-us .header .header-img
         display: flex
 
-
+    .header .btn-wrap
+        margin-top: 0
+        text-align: left
 @media screen and ( min-width: 992px )
 
     .header-title
-        padding: 70px 0 0
+        // padding: 100px 0 0
         &.defoult
             min-height: 271px
             min-width: 445px
@@ -326,9 +340,10 @@ header
             margin-bottom: 60px
             .title-wrap
                 h1
-                    font-size: 60px
+                    font-size: 54px
+                    line-height: 56px
                 p
-                    font-size: 36px
+                    font-size: 34px
                     line-height: 38px
             &.defoult
                 min-width: 510px
@@ -388,6 +403,21 @@ header
 
 
 
+
+#box
+    max-width: 100%
+    height: 100vh
+    position: absolute;
+    overflow: hidden
+    left: 0;
+    top: 0;
+    z-index: -1;
+    canvas
+
+@media screen and (min-width: 768px)
+    .is-panel-left
+        #box
+            margin-left: -100px;
 
 
     
