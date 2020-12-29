@@ -6,36 +6,47 @@
     &:hover
         transform: scale(1.1)
 
-.slider-col-2, .slider-scale
+.slider-col-2, .slider-scale, .slider-partners
     .slick-arrow
         position: absolute
         color: $accent
         font-size: 20px
         background: inherit
         border: none
-        width: 50px
         &::before
             display: inline-block
             width: 100%
+
+.slider-partners
+    .slick-arrow
+        bottom: -190px
+        right: 0px
+        &:nth-child(1)
+            right: 100px
+
+.slider-partners-wrap
+    .counter
+        bottom: 23px
+        right: 74px
         
 
 .slider-col-2
     .slick-arrow
         top: -52px
-        right: 17px
+        right: -10px
         &:nth-child(1)
-            right: 117px
+            right: 90px
 
 .slider-scale
     .slick-arrow
-        bottom: 28px
+        bottom: -30px
         left: 100px
         &:nth-child(1)
             left: 0px
 
 
 
-.slider-col-2-wrap, .slider-scale-wrap
+.slider-col-2-wrap, .slider-scale-wrap, .slider-partners
     .counter
         color: $text-dark
         font-family: $font-family-regolar
@@ -47,12 +58,12 @@
 .slider-col-2-wrap
     .counter
         top: -50px
-        right: 77px
+        right: 73px
 
 .slider-scale-wrap
     .counter
-        bottom: -69px
-        left: 170px
+        bottom: -30px
+        left: 74px
         
     
     
@@ -90,8 +101,25 @@
     &-item
         padding: 10px
         img
-            border: 1px solid #DCDFE6;
-            margin: 0;
+            border: 1px solid #DCDFE6
+            margin: 0
+
+// slider-partners-wrap
+
+.slider-partners-wrap
+    background: #F4F5F9
+    padding: 210px 0
+    margin: -66px 0 
+    box-shadow: 0px 0px 15px rgba(132, 130, 155, 0.25)
+    .slick-track
+        display: flex
+        align-items: center
+        .slider-item
+            padding: 0 15px
+            display: flex !important
+            justify-content: center
+            align-items: center
+            float: none
 
 @media screen and ( max-width: 767px )
     .slider-nav-wrap
@@ -102,8 +130,8 @@
             padding: 5px
             img
                 padding: 5px
-                border: 1px solid #DCDFE6;
-                margin: 0;
+                border: 1px solid #DCDFE6
+                margin: 0
     .slider-scale
         .slider-item
             padding: 0
@@ -136,7 +164,7 @@
     .slider-col-2-wrap
         .counter
             top: -50px
-            right: 62px
+            right: 83px
     
     .product .sliders-wrap
         margin-top: -130px
@@ -147,14 +175,21 @@
     .slider-scale-wrap
         height: 100%
         margin: 0 -15px
+        .counter
+            bottom: -70px
+            left: 74px
+
+    .slider-scale
+        .slick-arrow
+            bottom: 29px
         
     .slider-scale
         position: absolute
         left: 0
         top: 0px
         width: 100%
-        height: calc(100% + 200px);
-        top: -100px;
+        height: calc(100% + 200px)
+        top: -100px
         display: flex
         .slick-list, .slick-track
             height: 100%
@@ -167,7 +202,7 @@
             display: flex
             justify-content: center
             align-items: center
-            overflow: hidden;
+            overflow: hidden
             img
                 height: 100%
                 width: auto

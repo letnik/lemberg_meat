@@ -9,8 +9,8 @@ $(function() {
         speed: 300,
         slidesToShow: 2,
         adaptiveHeight: true,
-        prevArrow: '<button class="prev"><i class="icon-arrow_left-01"></i></button>',
-        nextArrow: '<button class="next"><i class="icon-arrow_right"></i></button>',
+        prevArrow: '<button class="prev"><i class="icon-arrow left"></i></button>',
+        nextArrow: '<button class="next"><i class="icon-arrow right"></i></button>',
         responsive: [
             {
               breakpoint: 480,
@@ -38,8 +38,8 @@ $(function(){
       slidesToScroll: 1,
       dots: false,
       adaptiveHeight: true,
-      prevArrow: '<button class="prev"><i class="icon-arrow_left-01"></i></button>',
-      nextArrow: '<button class="next"><i class="icon-arrow_right"></i></button>',
+      prevArrow: '<button class="prev"><i class="icon-arrow left"></i></button>',
+      nextArrow: '<button class="next"><i class="icon-arrow right"></i></button>',
 
       responsive: [
         {
@@ -169,6 +169,7 @@ $('.slider-for').slick({
   });
 
 
+
  
 $(document).ready(function(){
 	$(".scroll-box").on("click","a", function (event) {
@@ -188,3 +189,28 @@ $(document).ready(function(){
 
 
 
+jQuery(function($){
+  $("#phone").mask("(999) 999-9999");
+});
+
+
+$('.slider-partners').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  prevArrow: '<button class="prev"><i class="icon-arrow left"></i></button>',
+  nextArrow: '<button class="next"><i class="icon-arrow right"></i></button>',
+  responsive: [
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+
+$(".slider-partners").on('afterChange', function(event, slick, currentSlide){
+  $("#counter").text(currentSlide + 1);
+});
