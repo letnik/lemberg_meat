@@ -169,6 +169,31 @@ $('.slider-for').slick({
   });
 
 
+  $(document).ready(function(){
+
+    $(window).scroll(function() {
+      winPos = $(window).scrollTop();
+      if (winPos >= 600) {
+
+        $('.panel-top').addClass('fixed');
+        setTimeout(function (){
+        
+          $('.panel-top').addClass('scroll');
+        }, 200);
+      }
+      else {
+        $('.panel-top').removeClass('scroll');
+        setTimeout(function (){
+          $('.panel-top').removeClass('fixed');
+
+        
+        }, 200);
+      }
+    });
+  
+  });
+
+
 
  
 $(document).ready(function(){
@@ -180,7 +205,7 @@ $(document).ready(function(){
 		var id  = $(this).attr('href'),
 
 		//узнаем высоту от начала страницы до блока на который ссылается якорь
-			top = $(id).offset().top;
+		top = $(id).offset().top;
 		
 		//анимируем переход на расстояние - top за 1500 мс
 		$('body,html').animate({scrollTop: top}, 1000);

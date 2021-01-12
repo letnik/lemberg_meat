@@ -27,12 +27,17 @@
     .nav 
         width: 100vw
         height: 100vh
-        background:  #ccc
+        background:  #F9F5F4
         .nav-list
+            text-align: center
         .nav-item
             padding: 10px
             a
                 margin: 0 5px
+                font-size: 18px
+                text-transform: uppercase
+                padding: 5  px
+                display: inline-block
 
 
 .nav-secondery
@@ -49,6 +54,12 @@
     position: relative
     display: block
     margin: 0 auto
+    transition: .3s cubic-bezier(.38,-1.13,.63,2.06) transform, .2s opacity
+    
+    [class*=" icon-"]:before, [class^=icon-]:before, i:before
+        margin-left: 0 !important
+        margin-right: 0 !important
+
     .icon, .icon-hover
         position: absolute
         width: 100%
@@ -65,31 +76,33 @@
         opacity: 1
         &.half-pig
             &::before
-                background: url('../img/_tmp/cerdo.svg') no-repeat center center / contain
+                background: url('img/icon/part_pig.svg') no-repeat center center / contain
         &.pig-element
             &::before
-                background: url('../img/_tmp/cerdo_hover.svg') no-repeat center center / contain
+                background: url('img/icon/cerdo_hover.svg') no-repeat center center / contain
         &.sub-prod
             &::before
-                background: url('../img/subprod.svg') no-repeat center center / contain
+                background: url('img/icon/subprod.svg') no-repeat center center / contain
         &-hover
+            opacity: 0
             &.half-pig
-                opacity: 0
-                background: url('../img/icon/part_pig_color.svg') no-repeat center center / contain
+                &::before
+                    background: url('img/icon/part_pig_color.svg') no-repeat center center / contain
             &.pig-element
-                opacity: 0
-                background: url('../img/icon/element_pig_color.svg') no-repeat center center / contain
+                &::before
+                    background: url('img/icon/element_pig_color.svg') no-repeat center center / contain
             &.sub-prod
-                opacity: 0
-                background: url('../img/icon/subprodukty_color.svg') no-repeat center center / contain
+                &::before
+                    background: url('img/icon/subprodukty_color.svg') no-repeat center center / contain
 
 
                 
 
 .nav-item:hover
-    a
-        color: lighten($text-black,50% )
+    a   
+        color: lighten($text-black,10% )
     .nav-icon
+        transform: scale(1.1)
         .icon
             opacity: 0
         .icon-hover

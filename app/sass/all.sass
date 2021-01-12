@@ -4,6 +4,9 @@
 /* --- hamburger --- */
 @import "humburger/hamburger"
 
+/* --- fontello --- */
+@import "includes/fontello.css"
+  
 /* --- grid --- */
 @import "parts/grid"
 
@@ -39,6 +42,9 @@
 
 /* --- accardeon --- */
 @import "parts/accardeon"
+
+/* --- fancybox --- */
+@import "includes/jquery.fancybox.css"
 
 /* --- footer --- */
 @import "parts/footer"
@@ -85,8 +91,13 @@
 
 
 .breadcrumbs
-  margin-top: 86px
+  margin-top: 87px
   padding: 20px 0
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  background: rgba(255,255,255,.65)
 .breadcrumbs-holder
   width: 100%
   height: auto
@@ -110,9 +121,12 @@
     &::after
       display: none
       
-      
-      
 
+@media screen and ( min-width: 768px )     
+      
+  .breadcrumbs
+    left: 100px
+    width: calc( 100% - 100px )
 
 
 .coment
@@ -242,6 +256,16 @@
       .row
         flex-direction:   row-reverse
 
+.map-wrap.full
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  #map
+    width: 100%
+    height: 100%
+
 
 .map-tmp
   display: flex
@@ -254,11 +278,16 @@
   justify-content: center
   align-items: center
   max-height: 300px
+  z-index: 0
   img
     width: auto
     min-height: 100%
     max-width: none
-
+.tmp-box
+  img
+    height: 100%
+    width: auto
+    max-width: none
 .text
   p 
     font-family: $font-family-regolar
@@ -783,6 +812,7 @@
   height: 50px
   background: $accent
   transform: rotateZ(-90deg)
+  z-index: 80
   a
     color: #ffffff
     font-size: 25px
