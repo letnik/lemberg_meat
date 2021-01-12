@@ -25,9 +25,9 @@ $(function() {
           ]
       });
 
-      $(".slider-scale").on('afterChange', function(event, slick, currentSlide){
-        $("#counter").text(currentSlide + 1);
-     });
+    $(".slider-scale").on('afterChange', function(event, slick, currentSlide){
+      $("#counter").text(currentSlide + 1);
+    });
 });
 
 $(function(){
