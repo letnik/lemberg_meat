@@ -6,12 +6,12 @@ $text-white:      #F9F9F9
 $border: $text-gray
 
 .hamburger-box
-  position: fixed
-  right: 30px
-  top: 30px
+  position: absolute
+  right: 10px
+  top: 3px
   z-index: 110
 
-@media only screen and (max-width: 768px)
+@media only screen and (max-width: 767px)
   .hamburger-box
     width: 80px
     height: 80px
@@ -20,7 +20,6 @@ $border: $text-gray
     align-items: center
     border-radius: 50px
     overflow: hidden
-    background: #fff
 .hamburger
   width: $hambasewidth * $hamsizemultiplier;
   height: 27px * $hamsizemultiplier;
@@ -84,5 +83,6 @@ $border: $text-gray
 @media only screen and (min-width: 768px)
 
   .hamburger-box
-    left: 30px  
+    left: -70px  
     right: auto
+    top: 30px

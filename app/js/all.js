@@ -140,19 +140,58 @@ $('.slider-for').slick({
 
 
 
-$(document).ready(function(){
+  $(document).ready(function(){
 
-  $(window).scroll(function() {
-    winPos = $(window).scrollTop();
-    if (winPos >= 400) {
-      $('.scroll-down').fadeOut();
-    }
-    else {
-      $('.scroll-down').fadeIn();
-    }
+    $(window).scroll(function() {
+      winPos = $(window).scrollTop();
+      if (winPos >= 400) {
+        $('.scroll-down').fadeOut();
+      }
+      else {
+        $('.scroll-down').fadeIn();
+      }
+    });
+  
   });
 
-});
+  $(document).ready(function(){
+
+    $(window).scroll(function() {
+      winPos = $(window).scrollTop();
+      if (winPos >= 400) {
+        $('.scroll-up').fadeIn();
+      }
+      else {
+        $('.scroll-up').fadeOut();
+      }
+    });
+  
+  });
+
+
+  $(document).ready(function(){
+
+    $(window).scroll(function() {
+      winPos = $(window).scrollTop();
+      if (winPos >= 600) {
+
+        $('.panel-top').addClass('fixed');
+        setTimeout(function (){
+        
+          $('.panel-top').addClass('scroll');
+        }, 200);
+      }
+      else {
+        $('.panel-top').removeClass('scroll');
+        setTimeout(function (){
+          $('.panel-top').removeClass('fixed');
+
+        
+        }, 200);
+      }
+    });
+  
+  });
 
 
 
@@ -166,7 +205,7 @@ $(document).ready(function(){
 		var id  = $(this).attr('href'),
 
 		//узнаем высоту от начала страницы до блока на который ссылается якорь
-			top = $(id).offset().top;
+		top = $(id).offset().top;
 		
 		//анимируем переход на расстояние - top за 1500 мс
 		$('body,html').animate({scrollTop: top}, 1000);
@@ -200,4 +239,3 @@ $('.slider-partners').slick({
 $(".slider-partners").on('afterChange', function(event, slick, currentSlide){
   $("#counter").text(currentSlide + 1);
 });
-
