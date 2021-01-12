@@ -331,7 +331,7 @@
 .form-wrap
   height: 100%
   background:  #F4F5F9
-  padding: 20px
+  padding: 40px
   .form-holder
     width: 100%
     margin: 0 auto
@@ -419,7 +419,7 @@
   color: darken(#FF9090, 9%)
 
 .news-item-month
-  padding: 0 5px 0 0 
+  padding: 0 5px
 
 .news-item-social
   margin-top: 0
@@ -489,7 +489,7 @@
     color: #FF9090
     transition: $transition-scale
     i
-      font-size: 28px
+      font-size: 21px
     &:hover
       color: $accent
       transform: scale(1.1)
@@ -595,10 +595,17 @@
       text-transform: uppercase
 
 
+.rent-feedback
+  .form-wrap
+    padding: 40px
 
 
+@media screen and ( min-width: 350px )
 
-      
+  .article-item-social
+    a
+      i
+        font-size: 28px
 
 
 
@@ -612,13 +619,19 @@
       .icon-wrap
         margin-bottom: 0
 
-
-  .feedback
+  .rent-feedback
     .form-wrap
-      .form-holder
-        width: 75%
+      padding: 60px
+
+
+
+  // .feedback
+  //   .form-wrap
+  //     .form-holder
+  //       width: 75%
 
 @media screen and ( min-width: 576px )
+
 
   .location-item
     .text-wrap
@@ -714,8 +727,8 @@
 
   .news-item-informer
     order: 1
-    padding: 5px
-    margin: 10px 10px 10px 0
+    padding: 5px 5px 5px 0
+    margin: 7px 10px 7px 0
     // width: 75px
     justify-content: space-around
 
@@ -725,14 +738,15 @@
   .news-item-day
     font-weight: bold
     font-size: 45px
-    line-height: 50px
+    line-height: 48px
     color: #FF9090
 
   .news-item-month, .news-item-year
-    width: 49%
+    // width: 49%
     font-weight: 600
     font-size: 15px
     color: #FF9090
+    line-height: 20px
     
 
   .news-item-social
@@ -752,6 +766,9 @@
 
   .ledge_down
     padding-bottom: 160px
+
+  .ledge_down-larger
+    padding-bottom: 260px
 
   // .ledge_down-0-lg
   //   padding-bottom: 0
@@ -791,6 +808,12 @@
 
 // @media screen and ( min-width: 1200px )
 //   .pagination 
+
+
+@media screen and ( min-width: 1400px )
+
+  .news-item-month, .news-item-year
+    width: 49%
 
 
 @media screen and ( min-width: 1999px )

@@ -2,32 +2,31 @@
 // END slick-carousel@1.8.1
 
 $(function() {
-    $('.slider-scale').slick({
-        dots: false,
-        arrows: true,
-        infinite: false,
-        speed: 300,
-        slidesToShow: 2,
-        adaptiveHeight: true,
-        prevArrow: '<button class="prev"><i class="icon-arrow left"></i></button>',
-        nextArrow: '<button class="next"><i class="icon-arrow right"></i></button>',
-        responsive: [
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
-            }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-          ]
-      });
 
-    $(".slider-scale").on('afterChange', function(event, slick, currentSlide){
-      $("#counter").text(currentSlide + 1);
-    });
+  $('.slider-scale').slick({
+    dots: false,
+    arrows: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 2,
+    adaptiveHeight: true,
+    prevArrow: '<button class="prev"><i class="icon-arrow left"></i></button>',
+    nextArrow: '<button class="next"><i class="icon-arrow right"></i></button>',
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+        }
+      }
+    ]
+  });
+  
+  $(".slider-scale").on('afterChange', function(event, slick, currentSlide){
+    $("#counter").text(currentSlide + 1);
+  });
+
 });
 
 $(function(){
@@ -140,58 +139,19 @@ $('.slider-for').slick({
 
 
 
-  $(document).ready(function(){
+$(document).ready(function(){
 
-    $(window).scroll(function() {
-      winPos = $(window).scrollTop();
-      if (winPos >= 400) {
-        $('.scroll-down').fadeOut();
-      }
-      else {
-        $('.scroll-down').fadeIn();
-      }
-    });
-  
+  $(window).scroll(function() {
+    winPos = $(window).scrollTop();
+    if (winPos >= 400) {
+      $('.scroll-down').fadeOut();
+    }
+    else {
+      $('.scroll-down').fadeIn();
+    }
   });
 
-  $(document).ready(function(){
-
-    $(window).scroll(function() {
-      winPos = $(window).scrollTop();
-      if (winPos >= 400) {
-        $('.scroll-up').fadeIn();
-      }
-      else {
-        $('.scroll-up').fadeOut();
-      }
-    });
-  
-  });
-
-
-  $(document).ready(function(){
-
-    $(window).scroll(function() {
-      winPos = $(window).scrollTop();
-      if (winPos >= 600) {
-
-        $('.panel-top').addClass('fixed');
-        setTimeout(function (){
-        
-          $('.panel-top').addClass('scroll');
-        }, 200);
-      }
-      else {
-        $('.panel-top').removeClass('scroll');
-        setTimeout(function (){
-          $('.panel-top').removeClass('fixed');
-
-        
-        }, 200);
-      }
-    });
-  
-  });
+});
 
 
 
@@ -205,7 +165,7 @@ $(document).ready(function(){
 		var id  = $(this).attr('href'),
 
 		//узнаем высоту от начала страницы до блока на который ссылается якорь
-		top = $(id).offset().top;
+			top = $(id).offset().top;
 		
 		//анимируем переход на расстояние - top за 1500 мс
 		$('body,html').animate({scrollTop: top}, 1000);
@@ -239,3 +199,4 @@ $('.slider-partners').slick({
 $(".slider-partners").on('afterChange', function(event, slick, currentSlide){
   $("#counter").text(currentSlide + 1);
 });
+
