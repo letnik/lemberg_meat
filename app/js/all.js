@@ -200,3 +200,21 @@ $(".slider-partners").on('afterChange', function(event, slick, currentSlide){
   $("#counter").text(currentSlide + 1);
 });
 
+
+
+
+
+
+$(document).ready(function(){
+
+  $(window).scroll(function() {
+    winPos = $(window).scrollTop();
+    if (winPos >= 100) {
+      $(".panel-top").addClass("scroll");
+    }
+    else {
+      $(".panel-top").removeClass("scroll");
+    }
+  });
+});
+

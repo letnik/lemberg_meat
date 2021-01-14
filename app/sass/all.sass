@@ -180,7 +180,7 @@
 
 
 .pagination
-  margin: 80px auto
+  margin: 30px auto
   &-item
     display: block
     margin: 0 3px
@@ -379,9 +379,20 @@
 
 .img-box
   margin-bottom: 10px
+  font-size: 0
+  line-height: 0
+  img
+    transition: $transition
   img
     width: 100%
-
+.news-item
+  .img-box
+    overflow: hidden
+    &:hover
+      img
+        opacity: .8
+        transform: scale(1.1)
+      
 .news-item-content
   margin-bottom: 25px
 
@@ -404,6 +415,11 @@
       font-size: 20px !important
       line-height: 22px
       font-weight: 600
+      transition: $transition
+      
+.news-item-title:hover
+  h2
+    color: $accent
 
 .news-item-wrap
   font-family: $font-family-regolar
@@ -430,7 +446,8 @@
     &:hover
       color: #FF9090
 
-
+// .product
+// .product-section
 
 
 // .products
@@ -800,7 +817,7 @@
 
   .location-item
     .text-wrap
-      padding: 54px 80px
+      padding: 40px 80px
       margin-bottom: 0
 
   .map-tmp
