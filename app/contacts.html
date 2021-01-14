@@ -54,7 +54,7 @@
                 </div>
 
                 <div class="btn-wrap d-none d-md-block">
-                  <button class="btn btn-solid">Замовити дзвінок</button>
+                  <button data-popup-name="popup-data" class="btn btn-solid popup-open">Замовити дзвінок</button>
                 </div>
               
               </div>
@@ -178,7 +178,7 @@
         </div>
       </header>
 
-      <div class="main">
+      <div id="main" class="main">
         <section class="location ledge_up">
           <div class="container">
             <div class="row">
@@ -230,7 +230,9 @@
             <div class="row">
               <div class="col-md-1 d-flex justify-content-center oh">
                 <div class="vertical-title-wrap rel">
-                  <div class="vertical-title offset-no line">
+
+                  <div class="vertical-title offset-off line">
+
                     <p>01 Виробництво / <span>02</span></p>
                   </div>
                 </div>
@@ -371,6 +373,41 @@
 
     <div class="scroll-up scroll-box">
       <a href="#wrap_all" class="scroll"><i class="icon-angle-right"></i> </a>
+    </div>
+
+    <div class="popup"  id="popup-data">
+      <div class="size-full d-flex jc-center ai-center">
+        <div class="popup-wrapper rel">
+          <div class="popup-content rel">
+
+            <div class="form-wrap d-flex flex-column justify-content-between shadow">
+              <div class="text centro">
+                <p>Надіслати резюме</p>
+              </div>
+              <div class="form-holder">
+                <form class="form d-flex flex-column justify-content-between">
+                  <div class="input-holder">
+                    <input type="text" name="name" placeholder="Iм,я">
+                    <input id="phone" type="text" name="phone" placeholder="Tелефон">
+                    <span class="resume-wrap">
+                      <label class="resume d-flex align-items-center" for="file"><i class="icon-contract-01"></i> Додати резюме</label>
+                      <input class="d-none" id="file" type="file" name="file" multiple>
+                    </span>
+                  </div>
+                </form>
+                <div class="button-wrap smoler d-flex justify-content-center">
+                  <button class="btn btn-solid">Надіслати </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="popup-close abs" data-popup-name="popup-data">
+              <i class="icon-cancel-2"></i>
+            </div>
+          </div>
+        </div>
+        <span class="popup-close-bg size-full abs" data-popup-name="popup-data"></span>
+      </div>
     </div>
 
       <!-- jQuery -->
