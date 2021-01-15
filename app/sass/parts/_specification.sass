@@ -123,6 +123,10 @@ i.icon-arrow
 @-moz-document url-prefix()
   button.btn
 
+.title-wrap
+  &.plus-pt
+    padding-top: 35px
+
 .mb-125
   margin-bottom: 25px
 
@@ -146,6 +150,11 @@ i.icon-arrow
   background: #252B41
   p
     color: #fff
+
+.rent
+  .feedback
+    padding-bottom: 0
+
 
 
 .feedback
@@ -180,18 +189,18 @@ i.icon-arrow
     -o-transform: rotateZ(-90deg) translateY(0%) //Opera
     -ms-transform: rotateZ(-90deg) translateY(0%) //IE
     transform: rotateZ(-90deg) translateY(0%) //браузеры без префексов
-    display: block;
-    transform: rotateZ(-90deg) translateY(0);
-    width: 1px;
-    height: 1px;
+    display: block
+    transform: rotateZ(-90deg) translateY(0)
+    width: 1px
+    height: 1px
 
   .vertical-title
-    display: block;
-    width: 450px;
-    position: absolute;
-    right: 0px;
-    text-align: right;
-    top: -27px;
+    display: block
+    width: 450px
+    position: absolute
+    right: 0px
+    text-align: right
+    top: -27px
     padding: 0 30px 
     &.line
       p
@@ -228,6 +237,10 @@ i.icon-arrow
 
 // end @media
 @media screen and ( min-width: 992px )
+
+  .title-wrap
+    &.plus-pt
+      padding-top: 20px
 
   .pb-lg-65
     padding-bottom: 40px
