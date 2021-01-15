@@ -53,7 +53,7 @@
                 </div>
 
                 <div class="btn-wrap d-none d-md-block">
-                  <button class="btn btn-solid">Замовити дзвінок</button>
+                  <button data-popup-name="popup-data" class="btn btn-solid popup-open">Замовити дзвінок</button>
                 </div>
               
               </div>
@@ -163,118 +163,118 @@
         </div>
       </section>
 
-      <div class="main no-header">
+      <div id="main" class="main no-header">
 
+        <section class="">
+          <div class="container">
+            <div class="row">
+              <div class="col-3">
 
-       <div class="container">
-         <div class="row">
-           <div class="col-3">
-
-            <div class="products-category grayer">
-              <div class="title-wrap">
-                <h2>Категорія товарів</h2>
+                <div class="products-category grayer">
+                  <div class="title-wrap">
+                    <h2>Категорія товарів</h2>
+                  </div>
+                  <ul class="category-list">
+                    <li class="category-item">
+                      <a href="#" class="d-flex align-items-center"><i class="icon-part_pig-01"></i><span>Свинина півтуші</span></a>
+                    </li>
+                    <li class="category-item">
+                      <a href="#" class="d-flex align-items-center"><i class="icon-element_pig-01"></i><span>Елементи свинячі</span></a>
+                    </li>
+                    <li class="category-item">
+                      <a href="#" class="d-flex align-items-center"><i class="icon-subprodukty-01"></i><span>Субпродукти</span></a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <ul class="category-list">
-                <li class="category-item">
-                  <a href="#" class="d-flex align-items-center"><i class="icon-part_pig-01"></i><span>Свинина півтуші</span></a>
-                </li>
-                <li class="category-item">
-                  <a href="#" class="d-flex align-items-center"><i class="icon-element_pig-01"></i><span>Елементи свинячі</span></a>
-                </li>
-                <li class="category-item">
-                  <a href="#" class="d-flex align-items-center"><i class="icon-subprodukty-01"></i><span>Субпродукти</span></a>
-                </li>
-              </ul>
-            </div>
-           </div>
-           <div class="col-9">
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="title-wrap">
-                <h1>Наша продукція</h1>
-              </div>
-              <div class="on-page">
-                <label for="on-page">Показати:</label>
-                <select id="on-page" name="on-page" class="on-page-value">
-                  <option value="volvo">20</option>
-                  <option value="saab">50</option>
-                  <option value="fiat">100</option>
-                </select>
+              <div class="col-9">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="title-wrap">
+                    <h1>Наша продукція</h1>
+                  </div>
+                  <div class="on-page">
+                    <label for="on-page">Показати:</label>
+                    <select id="on-page" name="on-page" class="on-page-value">
+                      <option value="volvo">20</option>
+                      <option value="saab">50</option>
+                      <option value="fiat">100</option>
+                    </select>
 
+                    
+
+
+
+                  </div>
+                </div>
+                <div class="products-list centro">
+                  <div class="row">
+                    <div class="col-4 mb-4">
+                      <div class="products-item">
+                        <div class="products-img"><img src="img/products-1.jpg" alt=""></div>
+                        <div class="products-title"><span>Ошийок свинячий</span></div>
+                        <a class="products-link" href="#">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-4 mb-4">
+                      <div class="products-item">
+                        <div class="products-img"><img src="img/products-2.jpg" alt=""></div>
+                        <div class="products-title"><span>Ошийок свинячий</span></div>
+                        <a class="products-link" href="#">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-4 mb-4">
+                      <div class="products-item">
+                        <div class="products-img"><img src="img/products-3.jpg" alt=""></div>
+                        <div class="products-title"><span>Ошийок свинячий</span></div>
+                        <a class="products-link" href="#">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-4 mb-4">
+                      <div class="products-item">
+                        <div class="products-img"><img src="img/products-4.jpg" alt=""></div>
+                        <div class="products-title"><span>Ошийок свинячий</span></div>
+                        <a class="products-link" href="#">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-4 mb-4">
+                      <div class="products-item">
+                        <div class="products-img"><img src="img/products-5.jpg" alt=""></div>
+                        <div class="products-title"><span>Ошийок свинячий</span></div>
+                        <a class="products-link" href="#">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-4 mb-4">
+                      <div class="products-item">
+                        <div class="products-img"><img src="img/products-6.jpg" alt=""></div>
+                        <div class="products-title"><span>Ошийок свинячий</span></div>
+                        <a class="products-link" href="#">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pagination">
+                  <ul class="pagination-list d-flex justify-content-center align-items-center">
+                    <li class="pagination-item prev disable"><span class=""><i class="icon-arrow_left-01"></i></span></li>
+                    <li class="pagination-item active"><a class="pagination-link" href="#">1</a></li>
+                    <li class="pagination-item"><a class="pagination-link " href="#">2</a></li>
+                    <li class="pagination-item"><a class="pagination-link " href="#">3</a></li>
+                    <li class="pagination-item"><a class="pagination-link " href="#">4</a></li>
+                    <li class="pagination-item"><a class="pagination-link " href="#">5</a></li>
+                    <li class="pagination-item next"><a href="#"><i class="icon-arrow_right"></i></a></li>
+                  </ul>
+                </div>
                 
-
-
-
               </div>
             </div>
-            <div class="products-list centro">
-              <div class="row">
-                <div class="col-4 mb-4">
-                  <div class="products-item">
-                    <div class="products-img"><img src="img/products-1.jpg" alt=""></div>
-                    <div class="products-title"><span>Ошийок свинячий</span></div>
-                    <a class="products-link" href="#">
-                    </a>
-                  </div>
-                </div>
-                <div class="col-4 mb-4">
-                  <div class="products-item">
-                    <div class="products-img"><img src="img/products-2.jpg" alt=""></div>
-                    <div class="products-title"><span>Ошийок свинячий</span></div>
-                    <a class="products-link" href="#">
-                    </a>
-                  </div>
-                </div>
-                <div class="col-4 mb-4">
-                  <div class="products-item">
-                    <div class="products-img"><img src="img/products-3.jpg" alt=""></div>
-                    <div class="products-title"><span>Ошийок свинячий</span></div>
-                    <a class="products-link" href="#">
-                    </a>
-                  </div>
-                </div>
-                <div class="col-4 mb-4">
-                  <div class="products-item">
-                    <div class="products-img"><img src="img/products-4.jpg" alt=""></div>
-                    <div class="products-title"><span>Ошийок свинячий</span></div>
-                    <a class="products-link" href="#">
-                    </a>
-                  </div>
-                </div>
-                <div class="col-4 mb-4">
-                  <div class="products-item">
-                    <div class="products-img"><img src="img/products-5.jpg" alt=""></div>
-                    <div class="products-title"><span>Ошийок свинячий</span></div>
-                    <a class="products-link" href="#">
-                    </a>
-                  </div>
-                </div>
-                <div class="col-4 mb-4">
-                  <div class="products-item">
-                    <div class="products-img"><img src="img/products-6.jpg" alt=""></div>
-                    <div class="products-title"><span>Ошийок свинячий</span></div>
-                    <a class="products-link" href="#">
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="pagination">
-              <ul class="pagination-list d-flex justify-content-center">
-                <li class="pagination-item prev disable"><span class=""><i class="icon-arrow_left-01"></i></span></li>
-                <li class="pagination-item active"><a class="pagination-link" href="#">1</a></li>
-                <li class="pagination-item"><a class="pagination-link " href="#">2</a></li>
-                <li class="pagination-item"><a class="pagination-link " href="#">3</a></li>
-                <li class="pagination-item"><a class="pagination-link " href="#">4</a></li>
-                <li class="pagination-item"><a class="pagination-link " href="#">5</a></li>
-                <li class="pagination-item next"><a href="#"><i class="icon-arrow_right"></i></a></li>
-              </ul>
-            </div>
-            
-           </div>
-         </div>
-       </div>
-
+          </div>
+        </section>
       </div>
 
 
@@ -337,6 +337,41 @@
 
     <div class="scroll-up scroll-box">
       <a href="#wrap_all" class="scroll"><i class="icon-angle-right"></i> </a>
+    </div>
+
+    <div class="popup"  id="popup-data">
+      <div class="size-full d-flex jc-center ai-center">
+        <div class="popup-wrapper rel">
+          <div class="popup-content rel">
+
+            <div class="form-wrap d-flex flex-column justify-content-between shadow">
+              <div class="text centro">
+                <p>Надіслати резюме</p>
+              </div>
+              <div class="form-holder">
+                <form class="form d-flex flex-column justify-content-between">
+                  <div class="input-holder">
+                    <input type="text" name="name" placeholder="Iм,я">
+                    <input id="phone" type="text" name="phone" placeholder="Tелефон">
+                    <span class="resume-wrap">
+                      <label class="resume d-flex align-items-center" for="file"><i class="icon-contract-01"></i> Додати резюме</label>
+                      <input class="d-none" id="file" type="file" name="file" multiple>
+                    </span>
+                  </div>
+                </form>
+                <div class="button-wrap smoler d-flex justify-content-center">
+                  <button class="btn btn-solid">Надіслати </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="popup-close abs" data-popup-name="popup-data">
+              <i class="icon-cancel-2"></i>
+            </div>
+          </div>
+        </div>
+        <span class="popup-close-bg size-full abs" data-popup-name="popup-data"></span>
+      </div>
     </div>
 
       <!-- jQuery -->
