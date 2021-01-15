@@ -17,9 +17,10 @@
             display: inline-block
             width: 100%
 
+
 .slider-partners
     .slick-arrow
-        bottom: -190px
+        bottom: -89px
         right: 0px
         &:nth-child(1)
             right: 100px
@@ -33,16 +34,16 @@
 .slider-col-2
     .slick-arrow
         left: 5px
-        bottom: -35px
+        bottom: -40px
         &.next
             left: 90px
 
 .slider-scale
     .slick-arrow
-        bottom: -30px
-        left: 100px
+        bottom: -40px
+        right: 0px
         &:nth-child(1)
-            left: 0px
+            right: 83px
 
 
 
@@ -58,12 +59,12 @@
 .slider-col-2-wrap
     .counter
         left: 82px
-        bottom: -35px
+        bottom: -40px
 
 .slider-scale-wrap
     .counter
-        bottom: -30px
-        left: 74px
+        bottom: -40px
+        right: 64px
         
     
     
@@ -108,8 +109,8 @@
 
 .slider-partners-wrap
     background: #F4F5F9
-    padding: 210px 0
-    margin: -66px 0 
+    padding: 110px 0
+    margin: 0 
     box-shadow: 0px 0px 15px rgba(132, 130, 155, 0.25)
     .slick-track
         display: flex
@@ -135,6 +136,20 @@
     .slider-scale
         .slider-item
             padding: 0
+
+@media screen and ( min-width: 480px )
+
+    .slider-scale-wrap
+        .counter
+            right: 54px
+
+    .slider-scale
+        margin: 0 -10px
+        .slider-item
+            padding: 0 10px
+
+
+            
 @media screen and ( min-width: 576px )
 
     .slider-text-wrap
@@ -175,18 +190,36 @@
         margin-top: -130px
 
 
+    .slider-partners
+        .slick-arrow
+            bottom: -190px
+
+    .slider-partners-wrap
+        padding: 210px 0
+        margin: -66px 0 
+
 @media screen and ( min-width: 992px )
+
+
+    .slider-scale
+        margin: 0
+        .slider-item
+            padding: 0
 
     .slider-scale-wrap
         height: 100%
         margin: 0 -15px
         .counter
             bottom: -70px
-            left: 74px
+            right: 90px
 
     .slider-scale
         .slick-arrow
-            bottom: 29px
+            bottom: 30px
+            right: 26px
+            &:nth-child(1)
+                right: 109px
+                
         
     .slider-scale
         position: absolute
@@ -224,7 +257,35 @@
                 width: 100%
 
 
+@media screen and ( min-width: 1200px )
+
+    .slider-scale-wrap
+        .counter
+            bottom: -90px
+            right: 111px
+
+    .slider-scale
+        .slick-arrow
+            bottom: 9px
+            right: 47px
+            &:nth-child(1)
+                right: 130px
+
+
 @media screen and ( min-width: 1400px )
+
+
+    .slider-scale-wrap
+        .counter
+            bottom: -94px
+            right: 132px
+
+    .slider-scale
+        .slick-arrow
+            bottom: 5px
+            right: 68px
+            &:nth-child(1)
+                right: 151px
 
     .slider-partners
         .slick-arrow
@@ -235,3 +296,4 @@
     .slider-partners-wrap
         .counter
             right: 104px
+

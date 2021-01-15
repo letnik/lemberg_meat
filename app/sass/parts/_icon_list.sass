@@ -9,6 +9,31 @@
             [class^="icon-"]
                 margin-right: 15px
 
+
+
+.icon-svg
+    &::before
+        content: ''
+        display: block
+        width: 40px
+        height: 40px
+    &.bg-1
+        &::before
+            background: url('../img/icon/01.svg')
+    &.bg-2
+        &::before
+            background: url('../img/icon/02.svg')
+    &.bg-3
+        &::before
+            background: url('../img/icon/03.svg')
+    &.bg-4
+        &::before
+            background: url('../img/icon/04.svg')
+    &.bg-5
+        &::before
+            background: url('../img/icon/05.svg')
+
+
 .icon-list-wrap
     margin: 30px 0
 .icon-item

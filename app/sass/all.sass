@@ -192,6 +192,7 @@
     &.disable
       color: $text-dark
     .pagination-link
+      font-family: $font-family-regolar
       padding: 8px 11px
       transition: $transition
       font-size: 13px
@@ -254,7 +255,6 @@
         flex-direction:   row-reverse
 
 .map-wrap.full
-  position: absolute
   width: 100%
   height: 100%
   top: 0
@@ -434,7 +434,7 @@
   display: flex
   color: darken(#FF9090, 9%)
 
-.news-item-month
+.news-item-month, .news-item-year
   padding: 0 5px
 
 .news-item-social
@@ -631,6 +631,14 @@
     font-weight: 400
     font-size: 15px
     color: #676767
+    transition: .3s cubic-bezier(.38,-1.13,.63,2.06) transform, .3s background, .3s color
+    transform: scale(1)
+    cursor: pointer
+    &:hover
+      background: lighten($accent, 5%)
+      color: #fff
+      box-shadow:  0 0 20px 0 rgba($text-dark, .35)
+      transform: scale(1.05)
     i 
       font-size: 25px
       margin-right: 12px
@@ -727,7 +735,7 @@
       top: 0
 
   .section-article-wrap
-    padding: 100px 50px
+    padding: 65px 50px
   .article
     .text-wrap
       background: inherit
@@ -784,6 +792,7 @@
     font-size: 15px
     color: #FF9090
     line-height: 20px
+    padding: 0 5px 0 0
     
 
   .news-item-social
@@ -800,6 +809,13 @@
       margin-right: 15px
       width: 44%
 @media screen and ( min-width: 992px )
+
+
+  .section-article-wrap
+    padding: 100px 50px
+
+  .map-wrap.full
+    position: absolute
 
   .ledge_down
     padding-bottom: 160px
@@ -851,9 +867,7 @@
 
   .news-item-month, .news-item-year
     width: 49%
-
-
-@media screen and ( min-width: 1999px )
+    padding: 0 5px
 
   .our-values
     .icon-list-wrap
@@ -862,26 +876,28 @@
         padding: 32px 15px
         .icon-desc
           font-size: 16px
-  
-  
-.scroll-up
-  position: fixed
-  right: 20px
-  bottom: 20px
-  width: 50px
-  height: 50px
-  background: $accent
-  transform: rotateZ(-90deg)
-  z-index: 80
-  display: none
-  a
-    color: #ffffff
-    font-size: 25px
-    display: flex
-    justify-content: center
-    align-items: center
-    width: 100%
-    height: 100%
+
+
+@media screen and ( min-width: 1999px )
+
+  .scroll-up
+    position: fixed
+    right: 20px
+    bottom: 20px
+    width: 50px
+    height: 50px
+    background: $accent
+    transform: rotateZ(-90deg)
+    z-index: 80
+    display: none
+    a
+      color: #ffffff
+      font-size: 25px
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 100%
+      height: 100%
 
 
 
