@@ -62,6 +62,22 @@ $(function(){
 $(document).ready((function(e){e(".hamburger").on("click",(function(){e(this).toggleClass("opened"),e(".nav-humburger").fadeToggle()}))}));
 
 
+
+
+
+jQuery(document).ready(function( $ ) {
+  if(document.documentElement.clientWidth <= 767) {
+    $( ".hamburger" ).click(function(){
+      $( ".panel-top .btn-wrap" ).fadeToggle();
+    });
+  }
+});
+
+
+
+
+
+
 $(function(){
     $('[data-fancybox="gallery"]').fancybox({});
 });
