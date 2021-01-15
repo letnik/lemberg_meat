@@ -49,6 +49,8 @@ section, footer
 
 .section
   padding: 100px 0
+.section-large
+  padding: 200px 0
 
 // header, section, footer
 //   overflow: hidden
@@ -153,8 +155,8 @@ i.icon-arrow
       justify-content: center
 
 
-// .vertical-title
-//   display: none
+.vertical-title-wrap
+  margin-bottom: 15px
 
 
 @media screen and ( min-width: 768px )
@@ -171,6 +173,7 @@ i.icon-arrow
     background: #252B41
 
   .vertical-title-wrap
+    margin-bottom: 0
     display: block
     -webkit-transform: rotateZ(-90deg) translateY(0%) //Chrome, Safari
     -moz-transform: rotateZ(-90deg) translateY(0%)//Firefox
@@ -190,11 +193,24 @@ i.icon-arrow
     text-align: right;
     top: -27px;
     padding: 0 30px 
+    &.line
+      p
+        display: inline-block
+        position: relative
+        &::before
+          content: ''
+          width: 100%
+          min-width: 400px
+          height: 1px 
+          display: block
+          position: absolute
+          background: #252b41
+          right: calc(100% + 30px)
+          bottom: 50%
     &.vertical-title-center
       right: -225px
       text-align: center
     &.vertical-title-end
-      right: -450px
       text-align: left
     &.offset-off
       padding: 0
@@ -220,6 +236,7 @@ i.icon-arrow
     background:  $bg-all
   .translateY-lg
     transform: translateY(-145px)
+
 .title-wrap
   padding: 20px 0
   h1, h2, h3, h4 
@@ -261,6 +278,8 @@ i.icon-arrow
 .wrap_all
   overflow: hidden
 
+.oh
+  overflow: hidden
 @media screen and ( min-width: 1200px )
 
   .mb-125
