@@ -253,7 +253,6 @@
         flex-direction:   row-reverse
 
 .map-wrap.full
-  position: absolute
   width: 100%
   height: 100%
   top: 0
@@ -417,7 +416,7 @@
   display: flex
   color: darken(#FF9090, 9%)
 
-.news-item-month
+.news-item-month, .news-item-year
   padding: 0 5px
 
 .news-item-social
@@ -613,6 +612,14 @@
     font-weight: 400
     font-size: 15px
     color: #676767
+    transition: .3s cubic-bezier(.38,-1.13,.63,2.06) transform, .3s background, .3s color
+    transform: scale(1)
+    cursor: pointer
+    &:hover
+      background: lighten($accent, 5%)
+      color: #fff
+      box-shadow:  0 0 20px 0 rgba($text-dark, .35)
+      transform: scale(1.05)
     i 
       font-size: 25px
       margin-right: 12px
@@ -766,6 +773,7 @@
     font-size: 15px
     color: #FF9090
     line-height: 20px
+    padding: 0 5px 0 0
     
 
   .news-item-social
@@ -782,6 +790,9 @@
       margin-right: 15px
       width: 44%
 @media screen and ( min-width: 992px )
+
+  .map-wrap.full
+    position: absolute
 
   .ledge_down
     padding-bottom: 160px
@@ -833,6 +844,7 @@
 
   .news-item-month, .news-item-year
     width: 49%
+    padding: 0 5px
 
 
 @media screen and ( min-width: 1999px )

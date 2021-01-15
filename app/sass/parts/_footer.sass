@@ -1,8 +1,6 @@
 
 .footer
   background: #252B41
-  &.mt
-    margin-top: 100px
   .logo
     a 
       display: block
@@ -90,6 +88,14 @@
           color: $accent
     .footer-top
       padding: 16px 0
+
+@media (min-width:992px)
+  .footer
+    &.mt
+    margin-top: 100px
+
+
+
 @media (min-width:576px)
 
   .footer
@@ -101,3 +107,7 @@
         a
           padding-left: 15px
           padding-right: 0 !important
+
+
+
+
