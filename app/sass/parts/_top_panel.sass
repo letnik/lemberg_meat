@@ -51,12 +51,30 @@
     &.scroll
         
     .btn-wrap
-        margin: 15px 0
+        margin: 0
+        display: none
+        position: fixed
+        left: 0
+        bottom: -200px
+        width: 100vw
+        z-index: 999
+        transition: all .3s
+        .btn
+            width: 100%
+        &.active
+            bottom: 0
+            
 
 
     .lang
         display: none
         margin: 0 7px
+        position: fixed
+        left: 30px
+        top: 30px
+        &.active
+            z-index: 999
+
         &-list
         &-item
             margin: auto 5px
@@ -67,7 +85,6 @@
                 font-weight: normal
                 font-size: 15px
                 line-height: 20px
-                color: #fff
                 transition: all .3s
                 text-transform: uppercase
                 &:hover
@@ -81,6 +98,16 @@
     .panel-top
         left: 100px
         width: calc(100% - 100px)
+        .btn-wrap
+            display: block
+            margin: 15px 0
+            position: static
+            width: auto
+            z-index: 1
+        .lang
+            left: auto
+            right: 30px
+            
     .panel-top
         div[class^=col]:nth-child(1)
             border-bottom: 1px solid  #C4C4C4
@@ -88,11 +115,14 @@
     .header-contact-wrap
         margin: auto
 
-
 @media screen and ( min-width: 992px )
     .panel-top
         .lang
             display: block
+            position: static
+            &-item
+                a 
+                    color: #fff
 
 @media screen and ( min-width: 1200px ) and ( max-width: 1250px )
     .panel-top

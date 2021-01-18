@@ -59,7 +59,13 @@ $(function(){
       
 
 // hamburger
-$(document).ready((function(e){e(".hamburger").on("click",(function(){e(this).toggleClass("opened"),e(".nav-humburger").fadeToggle()}))}));
+$(document).ready((function(e){
+  e(".hamburger").on("click",(function(){
+    e(this).toggleClass("opened"),
+    e(".nav-humburger").fadeToggle(),
+    e(".nav-humburger").toggleClass("opened")
+  })
+  )}));
 
 
 
@@ -68,7 +74,17 @@ $(document).ready((function(e){e(".hamburger").on("click",(function(){e(this).to
 jQuery(document).ready(function( $ ) {
   if(document.documentElement.clientWidth <= 767) {
     $( ".hamburger" ).click(function(){
+      $( ".panel-top .btn-wrap" ).toggleClass('active');
       $( ".panel-top .btn-wrap" ).fadeToggle();
+    });
+  }
+});
+
+jQuery(document).ready(function( $ ) {
+  if(document.documentElement.clientWidth <= 991) {
+    $( ".hamburger" ).click(function(){
+      $( ".panel-top .lang" ).toggleClass('active');
+      $( ".panel-top .lang" ).fadeToggle();
     });
   }
 });
@@ -205,7 +221,7 @@ $(document).ready(function(){
 
 
 jQuery(function($){
-  $("#phone").mask("(999) 999-9999");
+  $("#phone").mask("+38 (999) 999-9999");
 });
 
 
